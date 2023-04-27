@@ -31,12 +31,12 @@ nav ul li {
   display: flex;
   font-size: 1.5rem;
   justify-content: space-between;
-  margin-top: 2rem;
   margin: auto;
+  margin-top: 2rem;
   margin-left: 0;
   margin-right: -100px;
   width: 90%;
-  align-items:stretch;
+  align-items: stretch;
   align-content: baseline;
 }
 
@@ -46,13 +46,13 @@ nav ul li {
 }
 
 .headline {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 1.2rem;
   width: 92%;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .headline h1 {
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 .purple {
-  color:#7f8Cff;
+  color: #7f8cff;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -83,44 +83,51 @@ nav ul li {
 }
 
 @media screen and (min-width: 768px) {
-  .logo{
+  .logo {
     line-height: 1.8rem;
     margin-left: 1.5rem;
   }
+
   .toolbar-container {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
   }
+
   .headline {
+    margin: auto;
     margin-top: 2.5rem;
     padding-top: 1.8rem;
     width: 90%;
     display: flex;
-    margin: auto;
   }
+
   .headline h1 {
     font-size: 3.8rem;
     color: #172b4d;
     margin-bottom: 2rem;
     margin-left: 2rem;
   }
+
   .bio p {
     font-size: 1.8rem;
     line-height: 2rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
   }
+
   .purple {
     font-size: 2rem;
     margin-left: 2rem;
     margin-bottom: 1.2rem;
   }
+
   .links {
     margin-left: 2rem;
     margin-bottom: 30%;
   }
+
   .links svg {
     margin-right: 2rem;
     cursor: pointer;
