@@ -82,6 +82,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.links svg:hover path {
+  fill: #7f8cff;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     line-height: 1.8rem;
@@ -133,5 +137,9 @@ nav ul li {
     cursor: pointer;
     height: 2.5rem;
     width: 2.2rem;
+  }
+
+  .links svg:hover path {
+    fill: #7f8cff;
   }
 }
