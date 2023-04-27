@@ -5,11 +5,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-nav{
+nav {
   margin: 0;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
 }
@@ -24,7 +24,7 @@ nav ul li {
 nav ul li img {
   width: 30px;
   height: 30px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .toolbar-container {
@@ -36,18 +36,18 @@ nav ul li img {
 }
 
 .purple {
-  color: #7F8CFF;
+  color: #7f8cff;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .headline {
-  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin: auto;
+  margin-top: 5vh;
   width: 80%;
   background-image: url("images/headline_bg.png");
   background-position: center;
@@ -56,7 +56,7 @@ nav ul li img {
 .headline h1 {
   font-size: 3rem;
   line-height: 3.2rem;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
 }
 
@@ -69,7 +69,7 @@ nav ul li img {
 }
 
 .bio h2 {
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .links {
@@ -79,7 +79,7 @@ nav ul li img {
 .links img {
   height: 1.2rem;
   width: 1.2rem;
-  color: #505F79;
-  margin-right: .8rem;
+  color: #505f79;
+  margin-right: 0.8rem;
   cursor: pointer;
 }
