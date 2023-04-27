@@ -55,7 +55,7 @@ To get a local copy up and running, follow these steps.
 - Twitter: [@twitterhandle](https://twitter.com/NyalikMarvin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/marvin-otieno-05ba83263/)
 
-href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
