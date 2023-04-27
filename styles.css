@@ -1,27 +1,85 @@
 body {
   margin: 0;
+  padding: 0;
   width: 375px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  margin: 0;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: large;
+  cursor: pointer;
+}
+
+nav ul li img {
+  width: 30px;
+  height: 30px;
+  color: #7F8CFF;
 }
 
 .toolbar-container {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 20px;
-  color: #6070FF;
-  font-weight: 700;
-  height: 8vh;
-  align-items: center;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.purple {
+  color: #7F8CFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.headline {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
-  background-image: url('images/header-background-mobile.png');
+  margin: auto;
+  width: 80%;
+  background-image: url("images/headline_bg.png");
+  background-position: center;
 }
 
-ul {
-  list-style-type: none;
+.headline h1 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: #172B4D;
+  font-weight: 700;
 }
 
-li {
+.bio {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.bio h2 {
+  color: #7F8CFF;
+}
+
+.links {
+  display: flex;
+}
+
+.links img {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: #505F79;
+  margin-right: .8rem;
   cursor: pointer;
 }
-
