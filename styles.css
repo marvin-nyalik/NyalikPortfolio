@@ -1,85 +1,130 @@
 body {
   margin: 0;
   padding: 0;
-  width: 375px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin-top: 1.2rem;
+  background-image: url("images/header-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 110px;
 }
 
-nav {
-  margin: 0;
-}
-
-nav ul {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
   display: inline-block;
-  list-style-type: none;
-  font-size: large;
   cursor: pointer;
 }
 
-nav ul li img {
-  width: 30px;
-  height: 30px;
-  color: #7f8cff;
+.logo {
+  color: #6070ff;
+  font-weight: 700;
+  line-height: 1.2rem;
+  margin-left: 1rem;
 }
 
 .toolbar-container {
   display: flex;
+  font-size: 1.5rem;
   justify-content: space-between;
-  width: 80%;
+  margin-top: 2rem;
   margin: auto;
-  padding-top: 3rem;
+  margin-left: 0;
+  margin-right: -100px;
+  width: 90%;
+  align-items:stretch;
+  align-content: baseline;
 }
 
-.purple {
-  color: #7f8cff;
-  font-size: 1.5rem;
-  font-weight: 700;
+.toolbar-container svg {
+  font-size: 2rem;
+  margin-right: 0;
 }
 
 .headline {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  padding-top: 1.2rem;
+  width: 92%;
   margin: auto;
-  margin-top: 5vh;
-  width: 80%;
-  background-image: url("images/headline_bg.png");
-  background-position: center;
 }
 
 .headline h1 {
   font-size: 3rem;
-  line-height: 3.2rem;
   color: #172b4d;
-  font-weight: 700;
 }
 
-.bio {
+.bio p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  text-align: justify;
-  margin-bottom: 2rem;
-  font-weight: 400;
+  line-height: 1.8rem;
 }
 
-.bio h2 {
-  color: #7f8cff;
+.purple {
+  color:#7f8Cff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .links {
   display: flex;
+  flex-direction: row;
+  margin-bottom: 30%;
 }
 
-.links img {
-  height: 1.2rem;
-  width: 1.2rem;
-  color: #505f79;
-  margin-right: 0.8rem;
+.links svg {
+  margin-right: 1rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .logo{
+    line-height: 1.8rem;
+    margin-left: 1.5rem;
+  }
+  .toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  .headline {
+    margin-top: 2.5rem;
+    padding-top: 1.8rem;
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+  .headline h1 {
+    font-size: 3.8rem;
+    color: #172b4d;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .bio p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .purple {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .links {
+    margin-left: 2rem;
+    margin-bottom: 30%;
+  }
+  .links svg {
+    margin-right: 2rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.2rem;
+  }
 }
