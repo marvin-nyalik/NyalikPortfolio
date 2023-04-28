@@ -103,6 +103,91 @@ nav ul li {
   fill: #7f8cff;
 }
 
+.works {
+  display: grid;
+  place-items: center;
+  margin-left: 2rem;
+  grid-template-columns: 90%;
+  grid-template-rows: 4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #dfe1e6;
+  border-radius: 1rem;
+  background: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.card img {
+  width: 90%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.card span {
+  display: inline-block;
+  margin-bottom: 1.8rem;
+}
+
+.card p {
+  color: #344563;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-stack li {
+  color: #6070ff;
+  background: #e5e5e5;
+
+}
+
+.tag {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #344563;
+  line-height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.sub-tag {
+  color: #7a869a;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin-right: 1rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  display: inline-block;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: #c1c7d0;
+  font-size: 2rem;
+}
+
+
 @media screen and (min-width: 768px) {
   .logo {
     line-height: 1.8rem;
