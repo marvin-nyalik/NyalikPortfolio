@@ -67,7 +67,7 @@ nav ul li {
   color: grey;
 }
 
-.headline h1 {
+.heading {
   font-size: 3rem;
   color: #172b4d;
 }
@@ -91,7 +91,7 @@ nav ul li {
 .links {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
 }
 
 .links svg {
@@ -118,12 +118,13 @@ nav ul li {
   border-radius: 1rem;
   background: #ffffff;
   margin-bottom: 3rem;
+  padding: 1.2rem;
 }
 
 .card img {
-  width: 90%;
-  height: 100%;
-  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.8rem;
 }
 
 .card h2 {
@@ -135,20 +136,25 @@ nav ul li {
 
 .card span {
   display: inline-block;
-  margin-bottom: 1.8rem;
+  margin-bottom: 0.1rem;
 }
 
 .card p {
   color: #344563;
   font-size: 1rem;
   line-height: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  display: inline-block;
 }
 
 .tech-stack ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -157,36 +163,119 @@ nav ul li {
 .tech-stack li {
   color: #6070ff;
   background: #e5e5e5;
-
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  margin-bottom: 1.2rem;
 }
 
-.tag {
+.no-bullet {
   font-size: 1.3rem;
   font-weight: 600;
   color: #344563;
   line-height: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
-.sub-tag {
+.project-tag {
   color: #7a869a;
-  font-size: 2rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
-  margin-right: 1rem;
-  display: list-item;
+  margin-right: 0.3rem;
   list-style-type: disc;
   list-style-position: inside;
-  display: inline-block;
 }
 
-.bullet {
-  width: 8px;
-  height: 8px;
+.btn {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  border: 1px solid #396df2;
+  border-radius: 0.5rem;
+  background: white;
+  text-align: center;
+  padding: auto;
+  margin-right: auto;
+  height: 3rem;
+  color: #396df2;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.btn:hover {
+  color: white;
+  background: #6070ff;
+}
+.btn:active {
+  color: white;
+  background: #2230d2;
+}
+
+.btn:disabled {
+  color: #5E6C84;
+  background: #e5e5e5;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+}
+
+.resume-btn {
+  width: auto;
+}
+
+.languages-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 4.5rem;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.language-container svg {
+  width: 90%;
+  height: 3.5rem;
+  margin-right: 1rem;
+  background: #f7f7f9;
+  border-radius: 0.8rem;
+}
+
+.language-container p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #253858;
+}
+
+span img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#js {
   border-radius: 50%;
-  color: #c1c7d0;
-  font-size: 2rem;
 }
-
 
 @media screen and (min-width: 768px) {
   .logo {
@@ -212,7 +301,7 @@ nav ul li {
   .headline h1 {
     font-size: 3.8rem;
     color: #172b4d;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     margin-left: 2rem;
   }
 
@@ -231,7 +320,7 @@ nav ul li {
 
   .links {
     margin-left: 2rem;
-    margin-bottom: 30%;
+    margin-bottom: 3rem;
   }
 
   .links svg {
@@ -243,5 +332,52 @@ nav ul li {
 
   .links svg:hover path {
     fill: #7f8cff;
+  }
+
+  .card h2 {
+    font-size: 2.3rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    color: #172b4d;
+  }
+  
+  .card span {
+    display: inline-block;
+    margin-bottom: 0.1rem;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    color: #344563;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.3rem;
+  }
+  
+  .no-bullet {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #344563;
+    line-height: 1.9rem;
+    margin-right: 0.9rem;
+  }
+
+  .language-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 4.5rem;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+
+  .tech-stack li {
+    color: #6070ff;
+    background: #e5e5e5;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
   }
 }
