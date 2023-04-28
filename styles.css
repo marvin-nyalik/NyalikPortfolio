@@ -248,6 +248,7 @@ span img {
 .about-list {
   display: flex;
   flex-direction: column;
+  margin-top: 1.3rem;
 }
 
 .langs li {
@@ -288,10 +289,6 @@ span img {
   border-radius: 50%;
 }
 
-.about-list {
-  margin-top: 1.3rem;
-}
-
 .about-list span {
   display: flex;
   width: 90%;
@@ -300,7 +297,7 @@ span img {
   justify-content: space-between;
 }
 
-.about-list .vector{
+.about-list .vector {
   height: 0.9rem;
   width: 0.9rem;
 }
@@ -312,7 +309,6 @@ span img {
 hr {
   color: #47484b;
 }
-
 
 @media screen and (min-width: 768px) {
   .logo {
