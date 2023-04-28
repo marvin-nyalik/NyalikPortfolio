@@ -67,13 +67,15 @@ nav ul li {
   font-size: 3rem;
   color: #172b4d;
 }
+
 .bio {
   margin-bottom: 0.5rem;
 }
+
 .bio p {
   font-size: 1rem;
   line-height: 1.5rem;
-  color:#344563;
+  color: #344563;
 }
 
 .purple {
