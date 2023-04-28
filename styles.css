@@ -3,10 +3,6 @@ body {
   padding: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin-top: 1.2rem;
-  background-image: url("images/header-bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0 110px;
 }
 
 ul {
@@ -25,6 +21,15 @@ nav ul li {
   font-weight: 700;
   line-height: 1.2rem;
   margin-left: 1rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.logo a:hover {
+  color: #72737e;
 }
 
 .toolbar-container {
@@ -53,22 +58,28 @@ nav ul li {
   width: 92%;
   margin: auto;
   margin-top: 2rem;
+  background-image: url("images/header-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .headline h1 {
   font-size: 3rem;
   color: #172b4d;
 }
-
+.bio {
+  margin-bottom: 0.5rem;
+}
 .bio p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color:#344563;
 }
 
 .purple {
   color: #7f8cff;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .links {
@@ -117,7 +128,7 @@ nav ul li {
   .bio p {
     font-size: 1.8rem;
     line-height: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     margin-left: 2rem;
   }
 
