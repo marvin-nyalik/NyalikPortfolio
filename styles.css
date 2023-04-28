@@ -250,21 +250,30 @@ span img {
   flex-direction: column;
 }
 
+.langs li {
+  width: 90%;
+  height: 4rem;
+  background: #f7f7f9;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-content: baseline;
+  border-radius: 1.2rem;
+}
+
 .language-container {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  height: 4.5rem;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  margin-bottom: 1.2rem;
+  padding-top: 0.9rem;
 }
 
 .language-container svg {
   width: 90%;
   height: 3.5rem;
   margin-right: 1rem;
-  background: #f7f7f9;
   border-radius: 0.8rem;
 }
 
@@ -278,6 +287,32 @@ span img {
 #js {
   border-radius: 50%;
 }
+
+.about-list {
+  margin-top: 1.3rem;
+}
+
+.about-list span {
+  display: flex;
+  width: 90%;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-list .vector{
+  height: 0.9rem;
+  width: 0.9rem;
+}
+
+.lang-links {
+  width: 90%;
+}
+
+hr {
+  color: #47484b;
+}
+
 
 @media screen and (min-width: 768px) {
   .logo {
