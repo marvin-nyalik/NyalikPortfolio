@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+ul li {
+  display: inline-block;
+}
+
 nav ul li {
   display: inline-block;
   cursor: pointer;
@@ -116,9 +120,14 @@ nav ul li {
   flex-direction: column;
   border: 2px solid #dfe1e6;
   border-radius: 1rem;
-  background: #ffffff;
+  background: #fff;
   margin-bottom: 3rem;
   padding: 1.2rem;
+}
+
+span img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .card img {
@@ -144,10 +153,6 @@ nav ul li {
   font-size: 1rem;
   line-height: 1.2rem;
   margin-bottom: 2rem;
-}
-
-ul li {
-  display: inline-block;
 }
 
 .tech-stack ul {
@@ -208,13 +213,14 @@ ul li {
   color: white;
   background: #6070ff;
 }
+
 .btn:active {
   color: white;
   background: #2230d2;
 }
 
 .btn:disabled {
-  color: #5E6C84;
+  color: #5e6c84;
   background: #e5e5e5;
 }
 
@@ -235,7 +241,7 @@ ul li {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2rem;
-  color: #000000;
+  color: #000;
 }
 
 .about-list {
@@ -266,11 +272,6 @@ ul li {
   font-size: 1.3rem;
   line-height: 1.6rem;
   color: #253858;
-}
-
-span img {
-  width: 3rem;
-  height: 3rem;
 }
 
 #js {
@@ -340,20 +341,20 @@ span img {
     font-weight: 700;
     color: #172b4d;
   }
-  
+
   .card span {
     display: inline-block;
     margin-bottom: 0.1rem;
     font-size: 1.3rem;
   }
-  
+
   .card p {
     color: #344563;
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin-bottom: 2.3rem;
   }
-  
+
   .no-bullet {
     font-size: 1.5rem;
     font-weight: 600;
