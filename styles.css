@@ -260,6 +260,14 @@ span img {
   border-radius: 1.2rem;
 }
 
+.about-list span {
+  display: flex;
+  width: 90%;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .langs li span {
   width: 30%;
 }
@@ -287,14 +295,6 @@ span img {
 
 #js {
   border-radius: 50%;
-}
-
-.about-list span {
-  display: flex;
-  width: 90%;
-  height: 2rem;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .about-list .vector {
