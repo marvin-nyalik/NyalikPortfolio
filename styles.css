@@ -320,7 +320,6 @@ hr {
 }
 
 .contact {
-
   background: #6070ff url("images/contact-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -329,8 +328,6 @@ hr {
   height: 100%;
   border-top-left-radius: 5rem;
 }
-
-
 
 .contact h2 {
   color: #fff;
@@ -351,7 +348,8 @@ hr {
   padding-bottom: 1.3rem;
   text-align: center;
 }
-form{
+
+form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -360,7 +358,7 @@ form{
   justify-content: center;
 }
 
-form input{
+form input {
   width: 80%;
   margin: 0.8rem 1.5rem;
   border-radius: 0.5rem;
@@ -368,10 +366,10 @@ form input{
   color: #172b4d;
   height: 3rem;
   border:solid 1px #cfd8dc;
-  padding: 0.5rem;
-  
+  padding: 0.5rem;  
 }
-form textarea{
+
+form textarea {
   width: 80%;
   margin: 0.8rem 1.5rem;
   border-radius: 0.5rem;
@@ -379,11 +377,9 @@ form textarea{
   padding: 0.5rem;
   height: 5rem;
   border:solid 1px #cfd8dc;
-  
-
 }
 
-.contact-btn{
+.contact-btn {
   height: 3rem;
   padding: 0.3rem 0.4rem;
   width: 8rem;
@@ -394,14 +390,17 @@ form textarea{
   margin: 0.8rem 1.5rem;
   font-size: 1.2rem;
 }
-.contact-btn:hover{
+ 
+.contact-btn:hover {
   background-color: #396df2;
   color: #cfd8dc;
 }
-.contact-btn:active{
+
+.contact-btn:active {
   background-color: #7f8cff;
   color: #cfd8dc;
 }
+ 
 .line{
   position: relative;
   bottom: 10px;
@@ -414,8 +413,6 @@ form textarea{
   margin-bottom: 2rem;
   background-color: #000;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .logo {
