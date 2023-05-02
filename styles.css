@@ -319,6 +319,37 @@ hr {
   background: #dfe1e6;
 }
 
+.contact {
+  background-image: url("images/contact-bg.png");
+  background: #6070ff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 100vh;
+  border-top-left-radius: 5rem;
+}
+
+.contact h2 {
+  color: #fff;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 0.5rem;
+}
+
+.contact p {
+  color: #ebebff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1.3rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     line-height: 1.8rem;
