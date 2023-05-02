@@ -365,8 +365,8 @@ form input {
   background-color: #e5e5e5;
   color: #172b4d;
   height: 3rem;
-  border:solid 1px #cfd8dc;
-  padding: 0.5rem;  
+  border: solid 1px #cfd8dc;
+  padding: 0.5rem;
 }
 
 form textarea {
@@ -376,7 +376,7 @@ form textarea {
   background-color: #e5e5e5;
   padding: 0.5rem;
   height: 5rem;
-  border:solid 1px #cfd8dc;
+  border: solid 1px #cfd8dc;
 }
 
 .contact-btn {
@@ -386,11 +386,11 @@ form textarea {
   background-color: #fff;
   color: #6070ff;
   border-radius: 0.5rem;
-  border:solid 1px #cfd8dc;
+  border: solid 1px #cfd8dc;
   margin: 0.8rem 1.5rem;
   font-size: 1.2rem;
 }
- 
+
 .contact-btn:hover {
   background-color: #396df2;
   color: #cfd8dc;
@@ -400,8 +400,8 @@ form textarea {
   background-color: #7f8cff;
   color: #cfd8dc;
 }
- 
-.line{
+
+.line {
   position: relative;
   bottom: 10px;
   margin: 10px auto;
