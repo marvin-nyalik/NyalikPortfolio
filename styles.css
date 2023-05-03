@@ -350,12 +350,13 @@ hr {
 }
 
 form {
-  margin: 0 auto;
+  margin:0 auto;
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5rem;
-  width: 70%;
+  width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 form input {
@@ -364,9 +365,10 @@ form input {
   border-radius: 0.5rem;
   background-color: #e5e5e5;
   color: #172b4d;
-  height: 3rem;
+  height: 40px;
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
+  font-family: poppins, sans-serif;
 }
 
 form textarea {
@@ -377,11 +379,16 @@ form textarea {
   padding: 0.5rem;
   height: 5rem;
   border: 1px solid #cfd8dc;
+   font-family: poppins, sans-serif;
 }
 
 .contact-btn {
+  display: flex;
+  align-self: flex-start;
+ 
+  align-items: center;
   height: 3rem;
-  padding: 0.3rem 0.4rem;
+  padding:5px;
   width: 8rem;
   background-color: #fff;
   color: #6070ff;
