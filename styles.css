@@ -49,6 +49,10 @@ nav ul li {
   align-content: baseline;
 }
 
+nav div {
+  display: none;
+}
+
 .toolbar-container svg {
   font-size: 2rem;
   margin-right: 0;
@@ -332,26 +336,71 @@ hr {
     margin: auto;
   }
 
+  nav div {
+    display: flex;
+    justify-content: flex-end;  
+  }
+
+  .nav-link a {
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    justify-content: space-around;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .toolbar-container li {
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    color: #344563;
+  }
+
+  .toolbar-container svg {
+    display: none;
+  }
+
   .headline {
     margin: auto;
     margin-top: 2.5rem;
     padding-top: 1.8rem;
     width: 90%;
     display: flex;
+    background-image: url("images/desktop_bg.png");
+    background-position: center;
+    background-size: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .head-div {
+    width: 90%;
+    margin-left: 4rem;
   }
 
   .headline h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     color: #172b4d;
     margin-bottom: 1.2rem;
     margin-left: 2rem;
   }
 
   .bio p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    width: 70%;
     line-height: 2rem;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
+  }
+
+  .links {
+    width: 30%;
+    height: 3rem;
+  }
+
+  .headline h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .purple {
@@ -361,14 +410,16 @@ hr {
   }
 
   .links {
-    margin-left: 2rem;
+    margin-left: 1.2rem;
     margin-bottom: 3rem;
   }
 
   .links svg {
-    margin-right: 2rem;
+    position: relative;
+    bottom: 1.1rem;
+    margin-right: 0.7rem;
     cursor: pointer;
-    height: 2.5rem;
+    height: 1.2rem;
     width: 2.2rem;
   }
 
