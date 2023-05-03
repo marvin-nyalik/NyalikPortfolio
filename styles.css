@@ -442,10 +442,18 @@ hr {
     line-height: 1.5rem;
   }
 
-  .purple {
-    font-size: 2rem;
-    margin-left: 2rem;
+  .about h2 {
+    font-size: 2.5rem;
+    color: #172b4d;
     margin-bottom: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .bio #purple {
+    font-size: 1.2rem;
+    color: #7f8cff;
+    margin-bottom: 1.2rem;
+    margin-left: 2rem;
   }
 
   .links {
@@ -518,5 +526,35 @@ hr {
     margin-top: 1rem;
     width: auto;
     border: 1px solid #dfe1e6;
+  }
+
+  .about .container {
+    display: flex;
+  }
+
+  .about .container article  {
+    flex: 1;
+  }
+
+  .about-list {
+    margin-top: 2rem;
+  }
+
+  .languages-title {
+    color: #344563;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin-top: 1.2rem;
+  }
+
+  .langs ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .langs ul span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
   }
 }
