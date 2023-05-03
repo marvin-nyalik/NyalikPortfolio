@@ -319,6 +319,109 @@ hr {
   background: #dfe1e6;
 }
 
+.contact {
+  background: #6070ff url("images/contact-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5rem;
+}
+
+.contact h2 {
+  color: #fff;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 0.5rem;
+}
+
+.contact p {
+  color: #ebebff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1.3rem;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 70%;
+  margin: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #172b4d;
+  height: 2rem;
+  border: 1px solid #cfd8dc;
+  padding: 0.5rem;
+  font-family: poppins, sans-serif;
+}
+
+.btn-container {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+form textarea {
+  width: 70%;
+  margin: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  height: 5rem;
+  border: 1px solid #cfd8dc;
+  font-family: poppins, sans-serif;
+}
+
+.contact-btn {
+  align-items: center;
+  height: 2rem;
+  width: auto;
+  background-color: #fff;
+  color: #6070ff;
+  border-radius: 0.5rem;
+  border: 1px solid #cfd8dc;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.contact-btn:hover {
+  background-color: #6070ff;
+  color: #cfd8dc;
+}
+
+.contact-btn:active {
+  background-color: #2230d2;
+  color: #cfd8dc;
+}
+
+.line {
+  position: relative;
+  bottom: 1.2rem;
+  margin: 3rem auto;
+  width: 28%;
+  align-items: center;
+  justify-content: center;
+  height: 0.2rem;
+  margin-bottom: 1.2rem;
+  background-color: #000;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     line-height: 1.8rem;
