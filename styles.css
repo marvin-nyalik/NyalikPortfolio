@@ -325,7 +325,7 @@ hr {
   background-repeat: no-repeat;
   background-position: right;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-top-left-radius: 5rem;
 }
 
@@ -353,49 +353,54 @@ form {
   margin:0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
 form input {
-  width: 80%;
+  width: 70%;
   margin: 0.8rem 1.5rem;
   border-radius: 0.5rem;
-  background-color: #e5e5e5;
+  background-color: #fff;
   color: #172b4d;
-  height: 40px;
+  height: 2rem;
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
   font-family: poppins, sans-serif;
 }
 
+.contact p {
+  font-family: poppins, sans-serif;
+}
+
+.btn-container {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 form textarea {
-  width: 80%;
+  width: 70%;
   margin: 0.8rem 1.5rem;
   border-radius: 0.5rem;
-  background-color: #e5e5e5;
+  background-color: #fff;
   padding: 0.5rem;
   height: 5rem;
   border: 1px solid #cfd8dc;
-   font-family: poppins, sans-serif;
+  font-family: poppins, sans-serif;
 }
 
 .contact-btn {
-  display: flex;
-  align-self: flex-start;
- 
   align-items: center;
-  height: 3rem;
-  padding:5px;
-  width: 8rem;
+  height: 2rem;
+  width: auto;
   background-color: #fff;
   color: #6070ff;
   border-radius: 0.5rem;
   border: 1px solid #cfd8dc;
-  margin: 0.8rem 1.5rem;
   font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 .contact-btn:hover {
@@ -410,13 +415,13 @@ form textarea {
 
 .line {
   position: relative;
-  bottom: 2rem;
+  bottom: 1.2rem;
   margin: 3rem auto;
   width: 28%;
   align-items: center;
   justify-content: center;
   height: 0.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   background-color: #000;
 }
 
