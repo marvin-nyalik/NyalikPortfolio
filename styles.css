@@ -343,6 +343,7 @@ hr {
   font-size: 1.2rem;
   line-height: 1.5rem;
   font-weight: 400;
+  font-family: poppins, sans-serif;
   width: 75%;
   margin: 0 auto;
   padding-bottom: 1.3rem;
@@ -350,7 +351,7 @@ hr {
 }
 
 form {
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -367,10 +368,6 @@ form input {
   height: 2rem;
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
-  font-family: poppins, sans-serif;
-}
-
-.contact p {
   font-family: poppins, sans-serif;
 }
 
