@@ -398,6 +398,45 @@ hr {
     height: 3rem;
   }
 
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 85%;
+    margin-left: 3rem;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    align-content: center;
+  }
+
+  .no-bullet {
+    font-size: 1rem !important;
+  }
+
+  .card h2 {
+    font-size: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .card img {
+    width: 50%;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+  }
+
   .headline h2 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -428,8 +467,8 @@ hr {
   }
 
   .card h2 {
-    font-size: 2.3rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 700;
     color: #172b4d;
   }
@@ -437,14 +476,14 @@ hr {
   .card span {
     display: inline-block;
     margin-bottom: 0.1rem;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 
   .card p {
     color: #344563;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 2.3rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   .no-bullet {
@@ -468,9 +507,16 @@ hr {
   .tech-stack li {
     color: #6070ff;
     background: #e5e5e5;
-    border-radius: 1rem;
-    margin-right: 1.5rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.2rem;
+    margin-top: 1rem;
+    width: auto;
+    border: 1px solid #dfe1e6;
   }
 }
