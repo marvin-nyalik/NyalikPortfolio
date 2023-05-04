@@ -134,6 +134,11 @@ span img {
   width: 100%;
   height: auto;
   margin-bottom: 0.8rem;
+  transition: width .2s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(0.8);
 }
 
 .card h2 {
