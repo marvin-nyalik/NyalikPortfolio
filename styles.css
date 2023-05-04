@@ -134,6 +134,7 @@ span img {
   width: 100%;
   height: auto;
   margin-bottom: 0.8rem;
+  transition: 0.5s ease-in-out;
 }
 
 .card h2 {
@@ -311,6 +312,10 @@ span img {
   margin-left: 1rem;
 }
 
+.card img:hover {
+  transform: scale(0.8);
+}
+
 hr {
   width: 90%;
   height: 0.08rem;
@@ -369,6 +374,11 @@ form input {
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
   font-family: poppins, sans-serif;
+  transition: 0.5s;
+}
+
+form input:hover {
+  transform: translateY(0.5rem);
 }
 
 .btn-container {
