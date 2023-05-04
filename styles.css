@@ -430,6 +430,7 @@ form textarea {
   .line {
     display: none;
   }
+
   .logo {
     line-height: 1.8rem;
     margin-left: 1.5rem;
@@ -448,7 +449,7 @@ form textarea {
 
   nav div {
     display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-end;
   }
 
   .nav-link a {
@@ -503,13 +504,6 @@ form textarea {
     margin-left: 2rem;
   }
 
-  .bio #purple {
-    font-size: 1.2rem;
-    color: #7f8cff;
-    margin-bottom: 1.2rem;
-    margin-left: 2rem;
-  }
-
   .links {
     width: 30%;
     height: 3rem;
@@ -540,15 +534,6 @@ form textarea {
     margin-right: 2rem;
     margin-bottom: 4rem;
     align-content: center;
-  }
-
-  .no-bullet {
-    font-size: 1rem !important;
-  }
-
-  .card h2 {
-    font-size: 0.5rem;
-    margin-bottom: 0.7rem;
   }
 
   .card img {
@@ -606,6 +591,7 @@ form textarea {
     line-height: 2.5rem;
     font-weight: 700;
     color: #172b4d;
+    margin-bottom: 0.7rem;
   }
 
   .card span {
@@ -622,11 +608,11 @@ form textarea {
   }
 
   .no-bullet {
-    font-size: 1.5rem;
     font-weight: 600;
     color: #344563;
     line-height: 1.9rem;
     margin-right: 0.9rem;
+    font-size: 1rem !important;
   }
 
   .language-container {
@@ -660,6 +646,15 @@ form textarea {
     display: flex;
   }
 
+  .contact article {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    flex-direction: column;
+    margin: inherit;
+    height: auto;
+  }
+
   .about .container article  {
     flex: 1;
   }
@@ -680,6 +675,17 @@ form textarea {
     justify-content: flex-start;
     align-items: center;
     width: 50%;
+  }
+
+  .langs span {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.1rem !important;
+    color: #253858;
+    justify-content: center;
+    margin: 3rem 0.5rem;
+    width: 30%;
+    height: auto;
   }
 
   .langs ul span {
@@ -741,15 +747,6 @@ form textarea {
     height: 100%;
   }
 
-  .contact article {
-    display: flex;
-    align-self: center;
-    width: 60%;
-    flex-direction: column;
-    margin: inherit;
-    height: auto;
-  }
-
   .contact h2 {
     margin-top: 0;
     padding-top: 2rem;
@@ -770,17 +767,6 @@ form textarea {
 
   form textarea {
     margin-bottom: 0.9rem;
-  }
-
-  .langs span {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.1rem !important;
-    color: #253858;
-    justify-content: center;
-    margin: 3rem 0.5rem;
-    width: 30%;
-    height: auto;
   }
 
   .langs p {
