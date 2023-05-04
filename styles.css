@@ -504,11 +504,6 @@ form textarea {
     margin-left: 2rem;
   }
 
-  .links {
-    width: 30%;
-    height: 3rem;
-  }
-
   .card {
     display: flex;
     flex-direction: row;
@@ -525,7 +520,7 @@ form textarea {
     margin-bottom: 5rem;
   }
 
-  .card div{
+  .card div {
     height: 100%;
     width: 100%;
     display: flex;
@@ -571,6 +566,8 @@ form textarea {
   .links {
     margin-left: 1.2rem;
     margin-bottom: 0.5rem;
+    width: 30%;
+    height: 3rem;
   }
 
   .links svg {
@@ -655,7 +652,7 @@ form textarea {
     height: auto;
   }
 
-  .about .container article  {
+  .about .container article {
     flex: 1;
   }
 
@@ -697,7 +694,7 @@ form textarea {
 
   .language-container img {
     position: relative;
-    left:0;
+    left: 0;
     width: 2.5rem;
     height: 2.5rem;
     margin-top: 0.4rem;
