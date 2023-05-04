@@ -485,6 +485,13 @@ form textarea {
     margin-bottom: 4rem;
   }
 
+  .links {
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    width: 30%;
+    height: 3rem;
+  }
+
   .headline .links {
     margin-left: 7rem;
   }
@@ -595,13 +602,6 @@ form textarea {
     margin-bottom: 1.2rem;
     margin-left: 2rem;
     font-weight: 700;
-  }
-
-  .links {
-    margin-left: 1.2rem;
-    margin-bottom: 0.5rem;
-    width: 30%;
-    height: 3rem;
   }
 
   .links svg {
