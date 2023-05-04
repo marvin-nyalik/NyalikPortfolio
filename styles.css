@@ -230,7 +230,7 @@ span img {
 
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 90%;
   justify-content: center;
   margin: auto;
@@ -474,14 +474,27 @@ form textarea {
 
   .headline {
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     padding-top: 1.8rem;
     width: 90%;
     display: flex;
+    align-self: center;
     background-image: url("images/desktop_bg.png");
     background-position: center;
-    background-size: 90%;
-    margin-bottom: 3rem;
+    background-size: 85%;
+    margin-bottom: 4rem;
+  }
+
+  .headline .links {
+    margin-left: 7rem;
+  }
+
+  .headline p {
+    font-size: 1.2rem;
+    width: 100%;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
   }
 
   .head-div {
@@ -489,16 +502,25 @@ form textarea {
     margin-left: 4rem;
   }
 
+  .headline-bio {
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.4rem;
+  }
+
   .headline h1 {
     font-size: 3rem;
     color: #172b4d;
     margin-bottom: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
   }
 
   .bio p {
     font-size: 1.2rem;
-    width: 80%;
+    width: 100%;
     line-height: 2rem;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
@@ -513,6 +535,7 @@ form textarea {
     margin-bottom: 5rem;
     align-content: center;
     justify-content: center;
+    background-image: #fff;
     border: 1px solid #dfe1e6;
   }
 
@@ -527,13 +550,13 @@ form textarea {
     flex-direction: column;
     margin-left: auto;
     margin-right: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     align-content: center;
   }
 
   .card img {
-    width: 50%;
-    height: 80%;
+    width: 30rem;
+    height: 28rem;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1rem;
@@ -545,14 +568,25 @@ form textarea {
   }
 
   .about {
-    margin: 4rem auto;
+    margin: 2.5rem auto;
+    margin-bottom: 5rem;
+    border-top-right-radius: 3rem;
   }
 
   .about h2 {
     font-size: 2.5rem;
+    font-weight: 700;
     color: #172b4d;
     margin-bottom: 1.2rem;
     margin-left: 2rem;
+  }
+
+  #purple {
+    font-size: 1.2rem;
+    color: #7f8cff;
+    margin-bottom: 1.2rem;
+    margin-left: 7rem;
+    font-weight: 700;
   }
 
   .bio #purple {
@@ -620,7 +654,6 @@ form textarea {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-    margin-right: 1.2rem;
   }
 
   .tech-stack li {
@@ -639,10 +672,6 @@ form textarea {
     border: 1px solid #dfe1e6;
   }
 
-  .about .container {
-    display: flex;
-  }
-
   .contact article {
     display: flex;
     align-self: center;
@@ -652,9 +681,9 @@ form textarea {
     height: auto;
   }
 
-  .about .container article {
+  /* .about .container article {
     flex: 1;
-  }
+  } */
 
   .about-list {
     margin-top: 2rem;
@@ -662,7 +691,8 @@ form textarea {
 
   .languages-title {
     color: #344563;
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.3rem;
     margin-top: 1.2rem;
   }
@@ -720,9 +750,19 @@ form textarea {
   }
 
   #about_myself {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    width: 90%;
+    text-align: justify;
     color: #344563;
+  }
+  
+  .bio {
+    width: 40%;
+  }
+
+  .second-container {
+    width: 60%;
   }
 
   .resume-btn {
@@ -738,7 +778,7 @@ form textarea {
     background-image: url("images/contact_desktop_bg.png");
     background-size: contain;
     background-position: center;
-    width: 90%;
+    width: 100%;
     margin: 1rem auto;
     margin-top: 1.2rem;
     height: 100%;
@@ -754,6 +794,10 @@ form textarea {
     padding-bottom: 0.3rem;
   }
 
+  .contact-btn {
+    margin-top: 0.4rem;
+  }
+
   .btn-container {
     display: flex;
     justify-content: center;
@@ -767,7 +811,7 @@ form textarea {
   }
 
   .langs p {
-    font-size: 0.8rem;
+    font-size: 20px;
     font-weight: 500;
   }
 
