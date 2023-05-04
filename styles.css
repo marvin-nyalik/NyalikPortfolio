@@ -137,10 +137,6 @@ span img {
   transition: 0.5s ease-in-out;
 }
 
-.card img:hover {
-  transform: scale(0.8);
-}
-
 .card h2 {
   font-size: 2rem;
   line-height: 2.3rem;
@@ -314,6 +310,10 @@ span img {
 .langs span img {
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.card img:hover {
+  transform: scale(0.8);
 }
 
 hr {
