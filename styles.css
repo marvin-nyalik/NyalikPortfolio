@@ -377,9 +377,8 @@ form input {
   transition: 0.5s;
 }
 
-form input:hover{
+form input:hover {
   transform: translateY(0.5rem);
-
 }
 
 .btn-container {
