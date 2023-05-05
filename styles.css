@@ -529,10 +529,16 @@ form textarea {
     margin-left: 7rem;
   }
 
+  .headline h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+
   .headline p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     width: 100%;
-    line-height: 2rem;
+    line-height: 1.2rem;
     margin-bottom: 0.5rem;
     margin-left: 7rem;
   }
