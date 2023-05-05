@@ -530,9 +530,12 @@ form textarea {
   }
 
   .headline h1 {
-    font-size: 1.5rem;
     line-height: 2.5rem;
-    margin-bottom: 1.3rem;
+    font-size: 3rem;
+    color: #172b4d;
+    margin-bottom: 1.2rem;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
   }
 
   .headline p {
@@ -553,19 +556,6 @@ form textarea {
     width: 70%;
     line-height: 2rem;
     margin-bottom: 0.5rem;
-  }
-
-  .headline h1 {
-    font-size: 3rem;
-    color: #172b4d;
-    margin-bottom: 1.2rem;
-    margin-left: 7rem;
-    margin-top: 1.5rem;
-  }
-
-  .bio {
-    width: 40%;
-    padding-right: 1rem;
   }
 
   .bio p {
@@ -799,6 +789,7 @@ form textarea {
 
   .bio {
     width: 40%;
+    padding-right: 1rem;
   }
 
   .second-container {
@@ -860,7 +851,7 @@ form textarea {
   }
 }
 
-@media screen and (min-width: 1016px){
+@media screen and (min-width: 1016px) {
   .card img {
     width: 100%;
     height: 90%;
@@ -875,5 +866,21 @@ form textarea {
     font-size: 1rem;
     font-weight: 500;
   }
-}
 
+  .headline h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: #172b4d;
+    margin-bottom: 1.2rem;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+  }
+
+  .headline p {
+    font-size: 1.3rem;
+    width: 100%;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
+  }
+}
