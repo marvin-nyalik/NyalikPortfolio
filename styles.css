@@ -49,6 +49,10 @@ nav ul li {
   align-content: baseline;
 }
 
+nav div {
+  display: none;
+}
+
 .toolbar-container svg {
   font-size: 2rem;
   margin-right: 0;
@@ -227,7 +231,7 @@ span img {
 
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 90%;
   justify-content: center;
   margin: auto;
@@ -433,9 +437,17 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .line {
+    display: none;
+  }
+
   .logo {
     line-height: 1.8rem;
     margin-left: 1.5rem;
+  }
+
+  .reorder {
+    order: 1;
   }
 
   .toolbar-container {
@@ -445,43 +457,169 @@ form textarea {
     margin: auto;
   }
 
+  nav div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-link a {
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    justify-content: space-around;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .toolbar-container li {
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    color: #344563;
+  }
+
+  .toolbar-container svg {
+    display: none;
+  }
+
   .headline {
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     padding-top: 1.8rem;
     width: 90%;
     display: flex;
+    align-self: center;
+    background-image: url("images/desktop_bg.png");
+    background-position: center;
+    background-size: 85%;
+    margin-bottom: 4rem;
+  }
+
+  .links {
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    width: 30%;
+    height: 3rem;
+  }
+
+  .headline .links {
+    margin-left: 7rem;
+  }
+
+  .headline p {
+    font-size: 1.2rem;
+    width: 100%;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
+  }
+
+  .head-div {
+    width: 90%;
+    margin-left: 4rem;
+  }
+
+  .headline-bio {
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.4rem;
   }
 
   .headline h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     color: #172b4d;
     margin-bottom: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
   }
 
   .bio p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    width: 100%;
     line-height: 2rem;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
   }
 
-  .purple {
-    font-size: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 1.2rem;
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 85%;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    align-content: center;
+    justify-content: center;
+    background-image: #fff;
+    border: 1px solid #dfe1e6;
   }
 
-  .links {
+  .works article {
+    margin-bottom: 5rem;
+  }
+
+  .card div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    align-content: center;
+  }
+
+  .card img {
+    width: 30rem;
+    height: 28rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+  }
+
+  .headline h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about {
+    margin: 2.5rem auto;
+    margin-bottom: 5rem;
+    border-top-right-radius: 3rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #172b4d;
+    margin-bottom: 1.2rem;
     margin-left: 2rem;
-    margin-bottom: 3rem;
+  }
+
+  #purple {
+    font-size: 1.2rem;
+    color: #7f8cff;
+    margin-bottom: 1.2rem;
+    margin-left: 7rem;
+    font-weight: 700;
+  }
+
+  .bio #purple {
+    font-size: 1.2rem;
+    color: #7f8cff;
+    margin-bottom: 1.2rem;
+    margin-left: 2rem;
+    font-weight: 700;
   }
 
   .links svg {
-    margin-right: 2rem;
+    position: relative;
+    bottom: 1.1rem;
+    margin-right: 0.7rem;
     cursor: pointer;
-    height: 2.5rem;
+    height: 1.2rem;
     width: 2.2rem;
   }
 
@@ -490,49 +628,204 @@ form textarea {
   }
 
   .card h2 {
-    font-size: 2.3rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 700;
     color: #172b4d;
+    margin-bottom: 0.7rem;
   }
 
   .card span {
     display: inline-block;
     margin-bottom: 0.1rem;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 
   .card p {
     color: #344563;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 2.3rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   .no-bullet {
-    font-size: 1.5rem;
     font-weight: 600;
     color: #344563;
     line-height: 1.9rem;
     margin-right: 0.9rem;
+    font-size: 1rem !important;
   }
 
   .language-container {
     display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 4.5rem;
-    justify-content: space-evenly;
-    align-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
     align-items: center;
   }
 
   .tech-stack li {
     color: #6070ff;
     background: #e5e5e5;
-    border-radius: 1rem;
-    margin-right: 1.5rem;
-    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.2rem;
+    margin-top: 1rem;
+    width: auto;
+    border: 1px solid #dfe1e6;
+  }
+
+  .contact article {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    flex-direction: column;
+    margin: inherit;
+    height: auto;
+  }
+
+  /* .about .container article {
+    flex: 1;
+  } */
+
+  .about-list {
+    margin-top: 2rem;
+  }
+
+  .languages-title {
+    color: #344563;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3rem;
+    margin-top: 1.2rem;
+  }
+
+  .langs ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+
+  .langs span {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.1rem !important;
+    color: #253858;
+    justify-content: center;
+    margin: 3rem 0.5rem;
+    width: 30%;
+    height: auto;
+  }
+
+  .langs ul span {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+    padding-left: 0;
+  }
+
+  .language-container img {
+    position: relative;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.4rem;
+  }
+
+  .langs li {
+    width: auto;
+    height: 5rem;
+    margin-left: 0.5rem;
+  }
+
+  .langs li span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem 0.2rem;
+    width: auto;
+  }
+
+  .about-head {
+    font-size: 1.1rem;
+  }
+
+  #about_myself {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    width: 90%;
+    text-align: justify;
+    color: #344563;
+  }
+
+  .bio {
+    width: 40%;
+  }
+
+  .second-container {
+    width: 60%;
+  }
+
+  .resume-btn {
+    position: relative;
+    left: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 0.3rem;
+    margin-left: 0.8rem;
+  }
+
+  .contact {
+    background-image: url("images/contact_desktop_bg.png");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 1rem auto;
+    margin-top: 1.2rem;
+    height: 100%;
+  }
+
+  .contact h2 {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .contact p {
+    padding-bottom: 0.3rem;
+  }
+
+  .contact-btn {
+    margin-top: 0.4rem;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  form textarea {
+    margin-bottom: 0.9rem;
+  }
+
+  .langs p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .frameworks {
+    margin-top: 4.5rem;
   }
 }
