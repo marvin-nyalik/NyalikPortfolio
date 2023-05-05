@@ -601,7 +601,7 @@ form textarea {
   .card img {
     width: 60%;
     height: 60%;
-    margin: 1rem 1rem;
+    margin: 1rem 0.2rem;
   }
 
   .headline h2 {
