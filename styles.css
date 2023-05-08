@@ -856,9 +856,10 @@ form textarea {
   .frameworks {
     margin-top: 4.5rem;
   }
+
 }
 
-@media screen and (min-width: 1016px) {
+@media screen and (min-width: 1064px) {
   .card img {
     width: 100%;
     height: 90%;
