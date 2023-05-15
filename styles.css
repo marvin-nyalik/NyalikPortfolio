@@ -4,6 +4,45 @@
   font-family: poppins, sans-serif;
 }
 
+.menu-popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background: #6070ff;
+  color: #fff;
+}
+
+.mobile-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu .nav-link {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.mobile-menu .nav-link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.close{
+  position: absolute;
+  right: 30px;
+  font-size: 40px;
+}
+
 body {
   margin: 0;
   padding: 0;
