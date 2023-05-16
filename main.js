@@ -1,11 +1,24 @@
-const menu = document.getElementById('menu-popup');
-const closebtn =document.getElementsByClassName('close')
-function toggleMenu(){
-    menu.classList.toggle('menu-popup');
-    menu.style.display = 'flex';
-}
-document.getElementById('HumburgerMenu').addEventListener('click', toggleMenu);
+const openMenu = document.getElementById('openBtn');
+const closeMenu = document.getElementById('closeBtn');
+const links = document.getElementsByClassName('link');
+const mobileMenu = document.getElementById('mobile-menu');
 
-closebtn.addEventListener('click', () =>{
-    menu.classList.remove('menu-popup')
+function closeMobileMenu() {
+  mobileMenu.style.display = 'none';
+}
+
+function openMobileMenu() {
+  mobileMenu.style.display = 'flex';
+}
+
+links.forEach((element) => {
+  element.addEventListener('click', closeMobileMenu());
+});
+
+openMenu.addEventListener('click', () => {
+  openMobileMenu();
+});
+
+closeMenu.addEventListener('click', () => {
+  closeMobileMenu();
 });

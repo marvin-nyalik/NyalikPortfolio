@@ -4,43 +4,65 @@
   font-family: poppins, sans-serif;
 }
 
-.menu-popup {
-  display: none;
+.mobile-menu {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6070ff;
+  display: none;
+  flex-direction: column;
   top: 0;
   bottom: 0;
-  opacity: 0.9;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  z-index: 999;
-  background: #6070ff;
-  color: #fff;
-}
-
-.mobile-menu {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  left: 0;
+  right: 0;
+  mix-blend-mode: multiply;
 }
 
 .mobile-menu .nav-link {
-  padding-top: 2rem;
-  padding-left: 2rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.logo a:hover {
+  color: #72737e;
 }
 
 .mobile-menu .nav-link a {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
   color: #fff;
-  font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  font-weight: 600;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.close{
-  position: absolute;
-  right: 30px;
-  font-size: 40px;
+.mobile-menu .nav-link a:hover {
+  color: #5e6c84;
+}
+
+.openBtn {
+  z-index: 999;
+}
+
+.closeBtn {
+  font-size: 32px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+  bottom: 100%;
+  z-index: 999;
+  top: 0;
+  cursor: pointer;
+  color: #fff;
 }
 
 body {
@@ -70,15 +92,6 @@ nav ul li {
   font-weight: 700;
   line-height: 1.2rem;
   margin-left: 1rem;
-}
-
-.logo a {
-  text-decoration: none;
-  color: #6070ff;
-}
-
-.logo a:hover {
-  color: #72737e;
 }
 
 .toolbar-container {
@@ -112,7 +125,8 @@ nav div {
   margin: auto;
   margin-top: 2rem;
   background-image: url("images/header-bg.png");
-  background-size: 100%;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -495,6 +509,18 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-popup {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
   .line {
     display: none;
   }
@@ -904,6 +930,11 @@ form textarea {
     margin: 1rem 1rem;
   }
 
+  .headline {
+    background-position: left top;
+    background-size: contain;
+  }
+
   .works article {
     margin-bottom: 0.5rem;
   }
@@ -922,6 +953,10 @@ form textarea {
     margin-top: 1.5rem;
   }
 
+  .logo a {
+    font-size: 2.3rem;
+  }
+
   .headline p {
     font-size: 1.3rem;
     width: 100%;
@@ -930,7 +965,24 @@ form textarea {
     margin-left: 7rem;
   }
 
+  .nav-link a {
+    font-family: poppins, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: space-around;
+    color: #344563;
+    text-decoration: none;
+  }
+
   .resume-btn {
     padding: 3%;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #contact {
+    padding: 5rem 0;
   }
 }
