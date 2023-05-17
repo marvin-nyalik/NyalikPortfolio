@@ -18,6 +18,10 @@
   mix-blend-mode: multiply;
 }
 
+.menu-open {
+  overflow: hidden;
+}
+
 .mobile-menu .nav-link {
   height: 3rem;
   width: 100%;
