@@ -14,27 +14,36 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul class="toolbar-container">
-            <li class="logo">
-                <a href="https://twitter.com/NyalikMarvin">Nyalik Marv</a>
-            </li>
-            <li class="logo">
-                <svg width="30" height="20" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447715 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55229 17.5523 7 17 7L1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12H17C17.5523 12 18 11.5523 18 11C18 10.4477 17.5523 10 17 10H1Z" fill="#6070FF"/>
-                </svg>    
-            </li>
-            <div>
-            <li class="nav-link"> <a href="#">Portfolio</a></li>
-            <li class="nav-link"> <a href="#">About</a></li>
-            <li class="nav-link"> <a href="#">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="toolbar-container">
+                <li class="logo">
+                    <a href="https://twitter.com/NyalikMarvin">Nyalik Marv</a>
+                </li>
+                <li class="logo">
+                    <svg id="openBtn" onclick="openMobileMenu()" width="30" height="20" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447715 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55229 17.5523 7 17 7L1 7C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12H17C17.5523 12 18 11.5523 18 11C18 10.4477 17.5523 10 17 10H1Z" fill="#6070FF"/>
+                    </svg>    
+                </li>
+                <div>
+                <li class="nav-link"> <a href="#portfolio1">Portfolio</a></li>
+                <li class="nav-link"> <a href="#about">About</a></li>
+                <li class="nav-link"> <a href="#contact">Contact</a></li>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <span class="closeBtn" onclick="closeMobileMenu()">&times;</span>
+                    <li class="nav-link"> <a class="link" href="#works"
+                         onclick="closeMobileMenu()">Portfolio</a></li>
+                    <li class="nav-link"> <a class="link" href="#about" 
+                        onclick="closeMobileMenu()">About</a></li>
+                    <li class="nav-link"> <a class="link" href="#contact" 
+                        onclick="closeMobileMenu()">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="headline">
+        <section class="headline" id="portfolio1">
         <h1 class="heading">I’m Marvin. <br>Glad to see you!</h1>
         <article class="headline-bio">
             <p> I’m a software developer! I can help you build a product ,
@@ -85,7 +94,7 @@
         </article>
         </section>
 
-        <section class="works">
+        <section class="works" id="works">
             <article class="card">
                <img src="images/project_first.png" alt="project1">
                <div>
@@ -223,7 +232,7 @@
              </article>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <article class="bio">
                 <h2 class="about-head">About Myself</h2>
                 <p id="about_myself">I’m a software developer! I can help you build a product ,
@@ -319,15 +328,15 @@
                     </ul>
             </article>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact me</h2>
             <article>
                 <p>If you have an application you are interested in developing,
                      a feature that you need built or a project that needs coding. 
                     I’d love to help with it!</p>
                     <form action="https://formspree.io/f/xqkonprl" method="post">
-                        <input name="name" required maxlength="30" type="text" value="Marvin Nyalik">
-                        <input  required type="email" value="marvinlorem@ipsum">
+                        <input name="name" required maxlength="30" type="text" placeholder="Marvin Nyalik">
+                        <input  required type="email" placeholder="marvinlorem@ipsum">
                         <textarea name="Message" required maxlength="500" placeholder="Write your message here"></textarea>
                         <div class="btn-container">
                             <button class="contact-btn" type="submit">Get in Touch</button>
@@ -338,5 +347,6 @@
             </article>
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>

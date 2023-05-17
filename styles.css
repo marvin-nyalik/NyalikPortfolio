@@ -4,6 +4,73 @@
   font-family: poppins, sans-serif;
 }
 
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6070ff;
+  display: none;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: multiply;
+  z-index: 999;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.mobile-menu .nav-link {
+  height: 3rem;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.logo a:hover {
+  color: #72737e;
+}
+
+.mobile-menu .nav-link a {
+  text-decoration: none;
+  display: inline-block;
+  height: 2rem;
+  width: 100vw;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.mobile-menu .nav-link a:hover {
+  color: #dae1ed;
+}
+
+.openBtn {
+  z-index: 999;
+}
+
+.closeBtn {
+  font-size: 32px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  bottom: 100%;
+  z-index: 999;
+  top: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,15 +98,6 @@ nav ul li {
   font-weight: 700;
   line-height: 1.2rem;
   margin-left: 1rem;
-}
-
-.logo a {
-  text-decoration: none;
-  color: #6070ff;
-}
-
-.logo a:hover {
-  color: #72737e;
 }
 
 .toolbar-container {
@@ -73,7 +131,8 @@ nav div {
   margin: auto;
   margin-top: 2rem;
   background-image: url("images/header-bg.png");
-  background-size: 100%;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -456,6 +515,18 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-popup {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
   .line {
     display: none;
   }
@@ -865,6 +936,11 @@ form textarea {
     margin: 1rem 1rem;
   }
 
+  .headline {
+    background-position: left top;
+    background-size: contain;
+  }
+
   .works article {
     margin-bottom: 0.5rem;
   }
@@ -883,6 +959,10 @@ form textarea {
     margin-top: 1.5rem;
   }
 
+  .logo a {
+    font-size: 2.3rem;
+  }
+
   .headline p {
     font-size: 1.3rem;
     width: 100%;
@@ -891,7 +971,24 @@ form textarea {
     margin-left: 7rem;
   }
 
+  .nav-link a {
+    font-family: poppins, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: space-around;
+    color: #344563;
+    text-decoration: none;
+  }
+
   .resume-btn {
     padding: 3%;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #contact {
+    padding: 5rem 0;
   }
 }
