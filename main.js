@@ -6,6 +6,26 @@ const menu_bg = document.getElementById('portfolio1');
 const { body } = document;
 const logo = document.getElementsByClassName('logo');
 
+// local storage
+const mail = document.getElementById('mail');
+const username = document.getElementById('username');
+const message = document.getElementById('message');
+
+let contactData = {
+  mail,
+  message,
+  username
+};
+
+if (localStorage.getItem('contactData') !== null) {
+  let data = JSON.parse(localStorage.getItem('contactData'));
+  mail.value = data.mail;
+  username.value = data.username;
+  message.value = data.message;
+}
+
+
+
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
