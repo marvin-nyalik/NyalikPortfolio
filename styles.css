@@ -459,7 +459,7 @@ form input {
   transition: 0.5s;
 }
 
-.error-message{
+.error-message {
   color: red;
   display: none;
 }

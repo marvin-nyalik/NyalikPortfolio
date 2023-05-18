@@ -17,6 +17,7 @@ form.addEventListener('submit', (event)=>{
   if(emailValue === emailValue.toLowerCase()){
     errorMsg.style.display = 'none';
   }
+  
   else {
     event.preventDefault();
     errorMsg.style.display = 'block';
