@@ -8,16 +8,12 @@ const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
 const openBtn = document.getElementById('openBtn');
 
-openBtn.addEventListener('click', openMobileMenu);
-
 form.addEventListener('submit', (event) => {
   const emailValue = emailField.value;
 
   if (emailValue === emailValue.toLowerCase()) {
     errorMsg.style.display = 'none';
-}
-
-  else {
+  } else {
     event.preventDefault();
     errorMsg.style.display = 'block';
   }
@@ -29,6 +25,8 @@ function openMobileMenu() {
   menuBg.style.filter = 'blur(6px)';
   logo[0].style.filter = 'blur(6px)';
 }
+
+openBtn.addEventListener('click', openMobileMenu);
 
 function closeMobileMenu() {
   mobileMenu.style.display = 'none';
