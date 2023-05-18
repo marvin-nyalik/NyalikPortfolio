@@ -6,6 +6,9 @@ const logo = document.getElementsByClassName('logo');
 const emailField = document.getElementById('email');
 const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
+openBtn = document.getElementById('openBtn');
+
+openBtn.addEventListener('click', openMobileMenu);
 
 form.addEventListener('submit', (event) => {
   const emailValue = emailField.value;
