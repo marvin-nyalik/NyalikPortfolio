@@ -1,23 +1,19 @@
-const openMenu = document.getElementById('openBtn');
-const closeMenu = document.getElementById('closeBtn');
 const links = document.getElementsByClassName('link');
 const mobileMenu = document.getElementById('mobile-menu');
-const menu_bg = document.getElementById('portfolio1');
+const menuBg = document.getElementById('portfolio1');
 const { body } = document;
 const logo = document.getElementsByClassName('logo');
-
-//form validation
 const emailField = document.getElementById('email');
-const errorMsg = document.getElementById("error");
+const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
 
-form.addEventListener('submit', (event)=>{
-  let emailValue = emailField.value;
+form.addEventListener('submit', (event) => {
+  const emailValue = emailField.value;
 
-  if(emailValue === emailValue.toLowerCase()){
+  if (emailValue === emailValue.toLowerCase()) {
     errorMsg.style.display = 'none';
-  }
-  
+}
+
   else {
     event.preventDefault();
     errorMsg.style.display = 'block';
@@ -28,13 +24,13 @@ form.addEventListener('submit', (event)=>{
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
-  menu_bg.style.filter = 'blur(6px)';
+  menuBg.style.filter = 'blur(6px)';
   logo[0].style.filter = 'blur(6px)';
 }
 
 function closeMobileMenu() {
   mobileMenu.style.display = 'none';
-  menu_bg.style.filter = '';
+  menuBg.style.filter = '';
   logo[0].style.filter = '';
   body.classList.remove('menu-open');
 }
@@ -54,4 +50,3 @@ function checkWindowSize() {
 }
 
 window.onresize = checkWindowSize;
-
