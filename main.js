@@ -6,6 +6,24 @@ const menu_bg = document.getElementById('portfolio1');
 const { body } = document;
 const logo = document.getElementsByClassName('logo');
 
+//form validation
+const emailField = document.getElementById('email');
+const errorMsg = document.getElementById("error");
+const form = document.getElementById('form');
+
+form.addEventListener('submit', (event)=>{
+  let emailValue = emailField.value;
+
+  if(emailValue === emailValue.toLowerCase()){
+    errorMsg.style.display = 'none';
+  }
+  else {
+    event.preventDefault();
+    errorMsg.style.display = 'block';
+  }
+});
+
+
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
@@ -35,3 +53,4 @@ function checkWindowSize() {
 }
 
 window.onresize = checkWindowSize;
+
