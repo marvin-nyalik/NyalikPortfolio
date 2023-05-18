@@ -12,14 +12,13 @@ form.addEventListener('submit', (event) => {
 
   if (emailValue === emailValue.toLowerCase()) {
     errorMsg.style.display = 'none';
-}
+  }
 
   else {
     event.preventDefault();
     errorMsg.style.display = 'block';
   }
 });
-
 
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
@@ -44,7 +43,7 @@ function checkWindowSize() {
   if (window.innerWidth > 768) {
     mobileMenu.style.display = 'none';
     body.classList.remove('menu-open');
-    menu_bg.style.filter = '';
+    menuBg.style.filter = '';
     logo[0].style.filter = '';
   }
 }
