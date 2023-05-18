@@ -25,6 +25,26 @@ if (localStorage.getItem('contactData') !== null) {
 }
 
 console.log(contactData);
+mail.addEventListener('change', (e) => {
+  contactData.mail = e.target.value;
+  contactData.username = username.value;
+  contactData.message = message.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+
+username.addEventListener('change', (e) => {
+  contactData.mail = mail.value;
+  contactData.username = e.target.value;
+  contactData.message = message.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+
+message.addEventListener('change', (e) => {
+  contactData.mail = mail.value;
+  contactData.username = username.value;
+  contactData.message = e.target.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
 
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
