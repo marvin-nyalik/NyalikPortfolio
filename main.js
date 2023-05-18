@@ -6,7 +6,7 @@ const logo = document.getElementsByClassName('logo');
 const emailField = document.getElementById('email');
 const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
-openBtn = document.getElementById('openBtn');
+const openBtn = document.getElementById('openBtn');
 
 openBtn.addEventListener('click', openMobileMenu);
 
@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
 
   if (emailValue === emailValue.toLowerCase()) {
     errorMsg.style.display = 'none';
-  }
+}
 
   else {
     event.preventDefault();
