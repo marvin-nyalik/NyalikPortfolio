@@ -2,7 +2,7 @@ const openMenu = document.getElementById('openBtn');
 const closeMenu = document.getElementById('closeBtn');
 const links = document.getElementsByClassName('link');
 const mobileMenu = document.getElementById('mobile-menu');
-const menu_bg = document.getElementById('portfolio1');
+const menuBg = document.getElementById('portfolio1');
 const { body } = document;
 const logo = document.getElementsByClassName('logo');
 
@@ -11,34 +11,38 @@ const mail = document.getElementById('mail');
 const username = document.getElementById('username');
 const message = document.getElementById('message');
 
-let contactData = {
-  mail,
-  message,
-  username
+const contactData = {
+  mail: '',
+  message: '',
+  username: '',
 };
 
 if (localStorage.getItem('contactData') !== null) {
-  let data = JSON.parse(localStorage.getItem('contactData'));
+  const data = JSON.parse(localStorage.getItem('contactData'));
   mail.value = data.mail;
   username.value = data.username;
   message.value = data.message;
 }
 
-
+console.log(contactData);
 
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
-  menu_bg.style.filter = 'blur(6px)';
+  menuBg.style.filter = 'blur(6px)';
   logo[0].style.filter = 'blur(6px)';
 }
 
+openMenu.addEventListener('click', openMobileMenu);
+
 function closeMobileMenu() {
   mobileMenu.style.display = 'none';
-  menu_bg.style.filter = '';
+  menuBg.style.filter = '';
   logo[0].style.filter = '';
   body.classList.remove('menu-open');
 }
+
+closeMenu.addEventListener('click', closeMobileMenu);
 
 Array.from(links).forEach((element) => {
   element.addEventListener('click', closeMobileMenu);
@@ -49,7 +53,7 @@ function checkWindowSize() {
   if (window.innerWidth > 768) {
     mobileMenu.style.display = 'none';
     body.classList.remove('menu-open');
-    menu_bg.style.filter = '';
+    menuBg.style.filter = '';
     logo[0].style.filter = '';
   }
 }
