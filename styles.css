@@ -818,13 +818,6 @@ form textarea {
     top: 10px;
   }
 
-  .card .modal-ul {
-    margin-left: 5%;
-    position: relative;
-    top: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .card .modal-img {
     width: 90%;
     height: 50%;
@@ -858,6 +851,33 @@ form textarea {
     margin-left: 5%;
   }
 
+  .headline h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #172b4d;
+    margin-bottom: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .card h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #172b4d;
+    margin-bottom: 0.7rem;
+  }
+
+  .contact h2 {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+  }
+
   .card .modal-head-container h2 {
     font-size: 40px;
     color: #091e42;
@@ -868,8 +888,20 @@ form textarea {
   }
 
   .card .modal-ul {
+    margin-left: 5%;
+    position: relative;
+    top: 1.5rem;
+    margin-bottom: 0.5rem;
     padding-bottom: 15px;
   }
+
+  .no-bullet {
+    font-weight: 600;
+    color: #344563;
+    line-height: 1.9rem;
+    margin-right: 0.9rem;
+  }
+
   .card .modal-ul .no-bullet {
     font-size: 15px;
     font-style: medium;
@@ -896,6 +928,22 @@ form textarea {
     color: #fff;
   }
 
+  .tech-stack li {
+    color: #6070ff;
+    background: #e5e5e5;
+    border-radius: 0.5rem;
+    margin-right: 0.2rem;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .langs li {
+    width: auto;
+    height: 5rem;
+    margin-left: 0.5rem;
+  }
+
   .card .modal-footer .tech-stack li {
     font-size: 12px;
     line-height: 16px;
@@ -903,24 +951,11 @@ form textarea {
     top: 10px;
   }
 
-  .headline h2 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .about {
     margin: 2.5rem auto;
     flex-direction: row;
     margin-bottom: 5rem;
     border-top-right-radius: 3rem;
-  }
-
-  .about h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #172b4d;
-    margin-bottom: 1.2rem;
-    margin-left: 2rem;
   }
 
   #purple {
@@ -952,14 +987,6 @@ form textarea {
     fill: #7f8cff;
   }
 
-  .card h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: #172b4d;
-    margin-bottom: 0.7rem;
-  }
-
   .card span {
     display: inline-block;
     margin-bottom: 0.1rem;
@@ -973,14 +1000,6 @@ form textarea {
     margin-bottom: 2rem;
   }
 
-  .no-bullet {
-    font-weight: 600;
-    color: #344563;
-    line-height: 1.9rem;
-    margin-right: 0.9rem;
-    font-size: 1rem !important;
-  }
-
   .language-container {
     display: flex;
     flex-direction: column;
@@ -989,16 +1008,6 @@ form textarea {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-  }
-
-  .tech-stack li {
-    color: #6070ff;
-    background: #e5e5e5;
-    border-radius: 0.5rem;
-    margin-right: 0.2rem;
-    font-size: 0.9rem;
-    padding: 0.4rem;
-    margin-bottom: 0.9rem;
   }
 
   .btn {
@@ -1063,12 +1072,6 @@ form textarea {
     margin-top: 0.4rem;
   }
 
-  .langs li {
-    width: auto;
-    height: 5rem;
-    margin-left: 0.5rem;
-  }
-
   .langs li span {
     display: flex;
     flex-direction: column;
@@ -1117,12 +1120,6 @@ form textarea {
     margin: 1rem auto;
     margin-top: 1.2rem;
     height: 100%;
-  }
-
-  .contact h2 {
-    margin-top: 0;
-    padding-top: 2rem;
-    padding-bottom: 0.2rem;
   }
 
   .contact p {
