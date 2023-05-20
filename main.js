@@ -141,7 +141,6 @@ window.onresize = checkWindowSize;
                   <li>${project.technologies[1]}</li>
                   <li>${project.technologies[2]}</li>
                 </ul>
-                <hr>
                 <div class="view-btn-container">
                   <button class="btn"> <a href="${project.live_link}"> See live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
                   <button class="btn"> <a href="${project.source_link}">See source <i class="bx bxl-github"></i></a> </button>
