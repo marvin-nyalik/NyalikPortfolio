@@ -1,9 +1,23 @@
-const openMenu = document.getElementById('openBtn');
 const links = document.getElementsByClassName('link');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuBg = document.getElementById('portfolio1');
 const { body } = document;
 const logo = document.getElementsByClassName('logo');
+const emailField = document.getElementById('email');
+const errorMsg = document.getElementById('error');
+const form = document.getElementById('form');
+const openBtn = document.getElementById('openBtn');
+
+form.addEventListener('submit', (event) => {
+  const emailValue = emailField.value;
+
+  if (emailValue === emailValue.toLowerCase()) {
+    errorMsg.style.display = 'none';
+  } else {
+    event.preventDefault();
+    errorMsg.style.display = 'block';
+  }
+});
 
 // local storage
 const mail = document.getElementById('mail');
@@ -52,7 +66,7 @@ function openMobileMenu() {
   logo[0].style.filter = 'blur(6px)';
 }
 
-openMenu.addEventListener('click', openMobileMenu);
+openBtn.addEventListener('click', openMobileMenu);
 
 function closeMobileMenu() {
   mobileMenu.style.display = 'none';
@@ -60,8 +74,6 @@ function closeMobileMenu() {
   logo[0].style.filter = '';
   body.classList.remove('menu-open');
 }
-
-closeMenu.addEventListener('click', closeMobileMenu);
 
 Array.from(links).forEach((element) => {
   element.addEventListener('click', closeMobileMenu);
@@ -78,7 +90,6 @@ function checkWindowSize() {
 }
 
 window.onresize = checkWindowSize;
-
 // Popup Window
 (function createProjects() {
   const projectDetails = [
