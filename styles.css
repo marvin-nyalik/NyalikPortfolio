@@ -74,6 +74,7 @@
   right: 0;
   left: 0;
   background: #c1c7d0;
+  opacity: 0.93;
 }
 
 /* end modal */
@@ -303,7 +304,8 @@ span img {
 
 .card .modal-footer .details .view-btn-container a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  color:#6070ff ;
   width: auto;
 }
 
@@ -837,7 +839,8 @@ form textarea {
     z-index: 5;
     right: 0;
     left: 0;
-    background-color: lightgray;
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
   }
 
   .card .modal-footer {
@@ -1154,6 +1157,7 @@ form textarea {
     right: 0;
     left: 0;
     background: #c1c7d0;
+    mix-blend-mode: multiply;
   }
 
   .card img {
