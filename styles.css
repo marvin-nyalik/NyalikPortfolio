@@ -840,7 +840,7 @@ form textarea {
     right: 0;
     left: 0;
     background: #c1c7d0;
-    mix-blend-mode: multiply;
+    opacity: 0.98;
   }
 
   .card .modal-footer {
@@ -1157,7 +1157,7 @@ form textarea {
     right: 0;
     left: 0;
     background: #c1c7d0;
-    mix-blend-mode: multiply;
+    opacity: 0.98;
   }
 
   .card img {
