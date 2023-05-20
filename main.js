@@ -75,8 +75,6 @@ function closeMobileMenu() {
   body.classList.remove('menu-open');
 }
 
-closeMenu.addEventListener('click', closeMobileMenu);
-
 Array.from(links).forEach((element) => {
   element.addEventListener('click', closeMobileMenu);
   body.classList.remove('menu-open');
