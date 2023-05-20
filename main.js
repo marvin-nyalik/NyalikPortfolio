@@ -143,8 +143,8 @@ window.onresize = checkWindowSize;
                 </ul>
                 <hr>
                 <div class="view-btn-container">
-                  <a class="btn" href="${project.live_link}">See live <i class="bx bx-right-top-arrow-circle"></i></a>
-                  <a class="btn" href="${project.source_link}">See source <i class="bx bxl-github"></i></a>
+                  <button class="btn"> <a href="${project.live_link}"> See live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
+                  <button class="btn"> <a href="${project.source_link}">See source <i class="bx bxl-github"></i></a> </button>
                 </div>
               </div>
             </div>
