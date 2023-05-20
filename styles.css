@@ -299,7 +299,6 @@ span img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
-  margin-left: 1rem;
 }
 
 .card .modal-footer .details .view-btn-container a {
@@ -811,10 +810,12 @@ form textarea {
   }
 
   .card .modal-head-container .modal-close {
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 300;
     position: relative;
     cursor: pointer;
-    top: 25%;
+    color: #67798e;
+    top: 10px;
   }
 
   .card .modal-ul {
@@ -851,7 +852,27 @@ form textarea {
 
   .card .modal-footer .desc {
     flex: 2;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
     margin-left: 5%;
+  }
+
+  .card .modal-head-container h2 {
+    font-size: 40px;
+    color: #091e42;
+    font-weight: 700;
+    position: relative;
+    top: -18px;
+    line-height: 40px;
+  }
+
+  .card .modal-ul {
+    padding-bottom: 15px;
+  }
+  .card .modal-ul .no-bullet {
+    font-size: 15px;
+    font-style: medium;
   }
 
   .card .modal-footer .details {
@@ -860,6 +881,8 @@ form textarea {
 
   .card .modal-footer .details .view-btn-container {
     display: flex;
+    position: relative;
+    top: -10px;
     flex-direction: row;
     font-size: 13px;
   }
@@ -867,6 +890,17 @@ form textarea {
   .card .modal-footer .details .view-btn-container a {
     text-decoration: none;
     font-size: 13px;
+  }
+
+  .card .modal-footer .details .view-btn-container a:hover {
+    color: #fff;
+  }
+
+  .card .modal-footer .tech-stack li {
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+    top: 10px;
   }
 
   .headline h2 {
@@ -1144,6 +1178,7 @@ form textarea {
 
   .modal-img {
     width: 50%;
+    object-fit: cover;
     display: flex;
     align-self: center;
   }
