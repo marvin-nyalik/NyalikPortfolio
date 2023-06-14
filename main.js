@@ -7,11 +7,7 @@ const emailField = document.getElementById('email');
 const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
 const openBtn = document.getElementById('openBtn');
-const website_logo = document.getElementById('website-logo');
 
-website_logo.addEventListener('click', () => {
- errorMsg.style.display = 'block';
-});
 form.addEventListener('submit', (event) => {
   const emailValue = emailField.value;
 
