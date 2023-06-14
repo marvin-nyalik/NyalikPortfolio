@@ -222,3 +222,4 @@ window.onresize = checkWindowSize;
     }
   });
 }());
+window.onload = createProjects();
