@@ -96,7 +96,7 @@ window.onresize = checkWindowSize;
     {
       name: 'Leaderboard',
       description: 'This project consumes the Leaderboard API Service using JavaScript Async and Await to display scores submitted by different players',
-      image: 'images/leaderboard.PNG',
+      image: 'images/leaderboard.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/Leaderboard/dist/',
       source_link: 'https://github.com/marvin-nyalik/Leaderboard',
