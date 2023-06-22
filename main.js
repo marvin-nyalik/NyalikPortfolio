@@ -94,12 +94,12 @@ window.onresize = checkWindowSize;
 (function createProjects() {
   const projectDetails = [
     {
-      name: 'Facebook',
-      description: 'a simple clone of Facebook.com',
-      image: 'images/project_first.png',
+      name: 'Leaderboard',
+      description: 'This project consumes the Leaderboard API Service using JavaScript Async and Await to display scores submitted by different players',
+      image: 'images/leaderboard.PNG',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
-      source_link: 'https://github.com/marvin-nyalik/DestryMarkers',
+      live_link: 'https://marvin-nyalik.github.io/Leaderboard/dist/',
+      source_link: 'https://github.com/marvin-nyalik/Leaderboard',
     },
     {
       name: 'Dating',
@@ -134,13 +134,13 @@ window.onresize = checkWindowSize;
         <div>
           <h2>${project.name}</h2>
           <ul>
-            <li class="no-bullet">CANOPY</li>
+            <li class="no-bullet">ALLEAGY</li>
             <li class="project-tag">
               <span>
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                 </svg>
-                Back End Dev
+                Full Stack Eng.
               </span>
             </li>
             <li class="project-tag">
@@ -148,7 +148,7 @@ window.onresize = checkWindowSize;
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                 </svg>
-                2015
+                &copy;2023
               </span>
             </li>
           </ul>
@@ -167,13 +167,13 @@ window.onresize = checkWindowSize;
               <span class="modal-close">&times;</span>
             </div>
             <ul class='modal-ul'>
-              <li class="no-bullet">CANOPY</li>
+              <li class="no-bullet">ALLEAGY</li>
               <li class="project-tag">
                 <span>
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                   </svg>
-                  Back End Dev
+                  Full Stack Eng.
                 </span>
               </li>
               <li class="project-tag">
@@ -181,7 +181,7 @@ window.onresize = checkWindowSize;
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                   </svg>
-                  2015
+                  &copy;2023
                 </span>
               </li>
             </ul>

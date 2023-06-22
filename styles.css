@@ -4,6 +4,10 @@
   font-family: poppins, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mobile-menu {
   position: absolute;
   width: 100%;
@@ -162,6 +166,10 @@ nav ul li {
   margin-left: 1rem;
 }
 
+#logo-new:hover {
+  color: #253858;
+}
+
 .toolbar-container {
   display: flex;
   font-size: 1.5rem;
@@ -304,6 +312,7 @@ span img {
   display: flex;
   align-items: center;
   align-content: center;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -817,6 +826,10 @@ form textarea {
     margin: 1rem 0.2rem;
   }
 
+  .card-project {
+    object-fit: cover;
+  }
+
   /* modal */
   .card .modal {
     z-index: 10;
@@ -1262,7 +1275,7 @@ form textarea {
   }
 
   .logo a {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
 
   .headline p {
@@ -1275,11 +1288,20 @@ form textarea {
 
   .nav-link a {
     font-family: poppins, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-left: 1.5rem;
     justify-content: space-around;
     color: #344563;
     text-decoration: none;
+  }
+
+  .nav-link a:hover {
+    color: #6070ff;
+  }
+
+  .nav-link a:active {
+    color:#091e42;
   }
 
   .resume-btn {
