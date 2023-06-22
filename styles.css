@@ -750,9 +750,10 @@ form textarea {
   }
 
   .card-wrapper {
-    height: 92vh;
+    height: 90vh;
     width: 80vw;
     padding-top: 2rem;
+    margin: auto 0;
   }
 
   nav div {
