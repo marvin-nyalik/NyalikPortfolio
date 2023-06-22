@@ -4,6 +4,14 @@
   font-family: poppins, sans-serif;
 }
 
+body {
+  background: #bccee3;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin-top: 1.2rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,12 +23,13 @@ html {
   background: #6070ff;
   display: none;
   flex-direction: column;
+  overflow-x: hidden;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   mix-blend-mode: multiply;
-  z-index: 999;
+  z-index: 99;
 }
 
 /* modal */
@@ -137,13 +146,6 @@ body.menu-open {
   color: #fff;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  margin-top: 1.2rem;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -160,14 +162,22 @@ nav ul li {
 }
 
 .logo {
-  color: #6070ff;
+  color: #3769a3;
   font-weight: 700;
   line-height: 1.2rem;
   margin-left: 1rem;
 }
 
+#logo-new {
+  color: #6070ff;
+}
+
 #logo-new:hover {
-  color: #253858;
+  color: #3769a3;
+}
+
+#about {
+  border-top-left-radius: 40px;
 }
 
 .toolbar-container {
@@ -190,6 +200,11 @@ nav div {
 .toolbar-container svg {
   font-size: 2rem;
   margin-right: 0;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .headline {
@@ -222,6 +237,16 @@ nav div {
 
 .headline-bio p {
   margin: 1rem auto;
+}
+
+#bio-article {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#list-items {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .bio p {
@@ -264,9 +289,9 @@ nav div {
   display: flex;
   flex-direction: column;
   border: 2px solid #dfe1e6;
-  border-radius: 1rem;
+  border-top-left-radius: 2rem;
   background: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
   padding: 1.2rem;
 }
 
@@ -492,6 +517,10 @@ span img {
   width: 30%;
 }
 
+#logo-new span {
+  font-weight: 300;
+}
+
 .language-container {
   display: flex;
   width: 60%;
@@ -556,7 +585,7 @@ hr {
   background-repeat: no-repeat;
   background-position: right;
   width: 100%;
-  height: auto;
+  height: 100vh;
   border-top-left-radius: 5rem;
 }
 
@@ -689,15 +718,40 @@ form textarea {
     font-size: 1.5rem;
   }
 
+  #home {
+    height: 3vh;
+  }
+
   .reorder {
     order: 1;
   }
 
+  nav {
+    background: #fff;
+  }
+
+  #nav-list {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+  }
+
   .toolbar-container {
+    position: fixed;
+    top: 0;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+  }
+
+  .card-wrapper {
+    height: 95vh;
+    width: 80vw;
   }
 
   nav div {
@@ -708,7 +762,8 @@ form textarea {
   .nav-link a {
     font-family: poppins, sans-serif;
     font-size: 1rem;
-    margin-left: 1.5rem;
+    font-weight: 500;
+    margin-right: 1.5rem;
     justify-content: space-around;
     color: #344563;
     text-decoration: none;
@@ -803,6 +858,8 @@ form textarea {
     justify-content: center;
     background-image: #fff;
     border: 1px solid #dfe1e6;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 
   .works article {
@@ -820,10 +877,22 @@ form textarea {
     align-content: center;
   }
 
+  .img-div {
+    width: 50%;
+    margin-right: 0.3rem;
+  }
+
+  #elevator-pitch {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
   .card img {
-    width: 60%;
-    height: 60%;
-    margin: 1rem 0.2rem;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    margin: 0 0.2rem;
   }
 
   .card-project {
@@ -872,10 +941,10 @@ form textarea {
   }
 
   .card .modal-img {
-    width: 90%;
-    height: 50%;
-    display: flex;
-    align-self: center;
+    height: 40%;
+    width: 85%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 
   .card .modal-cover {
@@ -1004,8 +1073,19 @@ form textarea {
     top: 10px;
   }
 
+  [id^="mdl"] {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .sep {
+    height: 3vh;
+    margin-bottom: 2rem;
+  }
+
   .about {
-    margin: 2.5rem auto;
+    margin: 3.5rem auto;
     flex-direction: row;
     margin-bottom: 5rem;
     border-top-right-radius: 3rem;
@@ -1245,10 +1325,49 @@ form textarea {
     opacity: 0.98;
   }
 
+  [id^="mdl"] {
+    height: 300px;
+    width: 100px;
+    object-fit: cover;
+    display: none;
+  }
+
   .card img {
     width: 100%;
     height: 90%;
     margin: 1rem 1rem;
+  }
+
+  section {
+    margin-top: 5vh;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  #contact- {
+    height: 6vh;
+  }
+
+  nav {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-list {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    padding: 4px;
   }
 
   .headline {
@@ -1290,7 +1409,7 @@ form textarea {
     font-family: poppins, sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     justify-content: space-around;
     color: #344563;
     text-decoration: none;

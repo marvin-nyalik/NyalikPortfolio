@@ -7,6 +7,7 @@ const emailField = document.getElementById('email');
 const errorMsg = document.getElementById('error');
 const form = document.getElementById('form');
 const openBtn = document.getElementById('openBtn');
+const header = document.getElementsByTagName('header')[0];
 
 form.addEventListener('submit', (event) => {
   const emailValue = emailField.value;
@@ -128,9 +129,13 @@ window.onresize = checkWindowSize;
   ];
   const projectContainer = document.getElementById('works');
   projectDetails.forEach((project, index) => {
-    const articleTemplate = `
-      <article class="card">
+    const articleTemplate = 
+    
+    `<div class="card-wrapper">
+     <article class="card">
+        <div class="img-div">
         <img src="${project.image}" alt="project1" class="card-project">
+        </div>
         <div>
           <h2>${project.name}</h2>
           <ul>
@@ -185,7 +190,7 @@ window.onresize = checkWindowSize;
                 </span>
               </li>
             </ul>
-            <img src="${project.image}" alt="project1" class="modal-img">
+            <img src="${project.image}" alt="project1" class="modal-img" id="mdl-${index}">
             <div class="modal-footer">
               <p class="desc">${project.description}</p>
               <div class="details">
@@ -202,6 +207,7 @@ window.onresize = checkWindowSize;
             </div>
           </div>
       </article>
+      </div>
     `;
     projectContainer.innerHTML += articleTemplate;
   });
@@ -210,12 +216,13 @@ window.onresize = checkWindowSize;
       const modalCover = event.target.parentNode.nextElementSibling;
       document.body.style.overflow = 'hidden';
       modalCover.style.display = 'flex';
+      header.style.display = 'none';
     }
     if (event.target.classList.contains('modal-close')) {
       const modalCover = event.target.closest('.modal-cover');
       modalCover.style.display = 'none';
       document.body.style.overflow = 'scroll';
+      header.style.display = 'flex';
     }
   });
 }());
-window.onload = createProjects();
