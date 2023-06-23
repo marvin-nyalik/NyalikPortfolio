@@ -759,6 +759,10 @@ form textarea {
     display: none;
   }
 
+  #openBtn {
+    display: none;
+  }
+
   .logo {
     line-height: 1.8rem;
     margin-left: 1.5rem;
@@ -1016,7 +1020,7 @@ form textarea {
   }
 
   .card .modal-footer .desc {
-    flex: 2;
+    flex: 1.5;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
@@ -1091,9 +1095,12 @@ form textarea {
     font-size: 13px;
   }
 
-  .card .modal-footer .details .view-btn-container a {
+  .card .modal-footer .details .view-btn-container .btn {
     text-decoration: none;
     font-size: 13px;
+    height: auto !important;
+    padding: 0 0 !important;
+    margin: 0 0 !important;
   }
 
   .card .modal-footer .details .view-btn-container a:hover {
