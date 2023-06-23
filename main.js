@@ -38,7 +38,6 @@ if (localStorage.getItem('contactData') !== null) {
   message.value = data.message;
 }
 
-console.log(contactData);
 mail.addEventListener('change', (e) => {
   contactData.mail = e.target.value;
   contactData.username = username.value;
