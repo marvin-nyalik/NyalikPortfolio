@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #bccee3;
+  background: rgb(117, 131, 148, 0.5);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -86,7 +86,7 @@ html {
   z-index: 5;
   right: 0;
   left: 0;
-  background: #2168d2;
+  background: rgb(117, 131, 148, 0.5);
 }
 
 /* end modal */
@@ -590,9 +590,9 @@ span img {
   margin-left: 1rem;
 }
 
-.card img:hover {
+/* .card img:hover {
   transform: scale(0.8);
-}
+} */
 
 hr {
   width: 90%;
@@ -815,15 +815,14 @@ form textarea {
 
   .headline {
     margin: auto;
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
     padding-top: 1.8rem;
     width: 90%;
     display: flex;
     align-self: center;
     background-image: url("images/desktop_bg.png");
-    background-position: center;
-    background-size: 92%;
-    margin-bottom: 4rem;
+    background-position: left 20px;
+    background-size: cover;
   }
 
   .heading {
@@ -844,12 +843,18 @@ form textarea {
   }
 
   .headline h1 {
-    line-height: 2.5rem;
     font-size: 3rem;
     color: #172b4d;
     margin-bottom: 1.2rem;
     margin-left: 7rem;
     margin-top: 1.5rem;
+  }
+
+  #elevator-pitch {
+    font-size: 24px;
+    line-height: 2.5;
+    width: 90%;
+    margin-bottom: 2rem;
   }
 
   .headline p {
@@ -936,7 +941,7 @@ form textarea {
   .card .modal {
     z-index: 10;
     position: fixed;
-    height: 90%;
+    height: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -949,13 +954,14 @@ form textarea {
     background: white;
     border: 1px solid lightgray;
     border-radius: 5px;
+    padding: 1rem 0;
   }
 
   .card .modal-head-container {
     display: flex;
     box-sizing: border-box;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
@@ -964,20 +970,12 @@ form textarea {
     align-self: center;
   }
 
-  .card .modal-head-container .modal-close {
-    font-size: 35px;
-    font-weight: 300;
-    position: relative;
-    cursor: pointer;
-    color: #67798e;
-    top: 10px;
-  }
-
   .card .modal-img {
-    height: 40%;
+    height: 55%;
     width: 85%;
     object-fit: cover;
     border-radius: 5px;
+    margin: 5px 0;
   }
 
   .card .modal-cover {
@@ -985,10 +983,11 @@ form textarea {
     position: fixed;
     top: 0;
     bottom: 0;
+    width: 100%;
     z-index: 5;
     right: 0;
     left: 0;
-    background: #c1c7d0;
+    background: rgb(117, 131, 148);
   }
 
   .card .modal-footer {
@@ -1161,8 +1160,8 @@ form textarea {
   .card p {
     color: #344563;
     font-size: 1rem;
-    line-height: 1.2rem;
-    margin-bottom: 2rem;
+    line-height: 2;
+    margin: 2rem 0;
   }
 
   .language-container {
@@ -1282,7 +1281,7 @@ form textarea {
     background-size: contain;
     background-position: center;
     width: 100%;
-    margin: 1rem auto;
+    margin: 0 auto;
     margin-top: 1.2rem;
     height: 100%;
   }
@@ -1293,12 +1292,25 @@ form textarea {
 
   .contact-btn {
     margin-top: 0.4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: #eeeff1;
+    color: #091e42;
+    font-size: 18px;
+    font-weight: 500;
+    transform: scale(0.95);
+  }
+
+  .contact-btn:active {
+    transform: scale(0.95);
   }
 
   .btn-container {
     display: flex;
-    justify-content: center;
-    margin-left: 1rem;
+    justify-content: flex-end;
     margin-top: 0.3rem;
     margin-bottom: 0.6rem;
   }
@@ -1314,155 +1326,5 @@ form textarea {
 
   .frameworks {
     margin-top: 4.5rem;
-  }
-}
-
-@media screen and (min-width: 1064px) {
-  /* modal */
-  .modal-head-container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    justify-self: center;
-    padding-top: 3rem;
-    align-self: center;
-  }
-
-  .modal-head-container .modal-close {
-    font-size: 40px;
-    position: relative;
-    top: 10%;
-  }
-
-  .modal-ul {
-    margin-left: 3rem;
-  }
-
-  .modal-img {
-    width: 50%;
-    object-fit: cover;
-    display: flex;
-    align-self: center;
-  }
-
-  .modal-cover {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 5;
-    right: 0;
-    left: 0;
-    background: #c1c7d0;
-  }
-
-  [id^="mdl"] {
-    height: 300px;
-    width: 100px;
-    object-fit: cover;
-    display: none;
-  }
-
-  .card img {
-    width: 100%;
-    height: 90%;
-    margin: 1rem 1rem;
-  }
-
-  section {
-    margin-top: 5vh;
-  }
-
-  header {
-    width: 100%;
-  }
-
-  #contact- {
-    height: 6vh;
-  }
-
-  nav {
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  #nav-list {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 9999;
-    padding: 4px;
-  }
-
-  .headline {
-    background-position: left top;
-    background-size: contain;
-  }
-
-  .works article {
-    margin-bottom: 0.5rem;
-  }
-
-  .langs p {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .headline h1 {
-    font-size: 3.5rem;
-    line-height: 4rem;
-    color: #172b4d;
-    margin-bottom: 1.2rem;
-    margin-left: 7rem;
-    margin-top: 1.5rem;
-  }
-
-  .logo a {
-    font-size: 1.7rem;
-  }
-
-  .headline p {
-    font-size: 1.3rem;
-    width: 100%;
-    line-height: 2rem;
-    margin-bottom: 0.5rem;
-    margin-left: 7rem;
-  }
-
-  .nav-link a {
-    font-family: poppins, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-right: 1.5rem;
-    justify-content: space-around;
-    color: #344563;
-    text-decoration: none;
-  }
-
-  .nav-link a:hover {
-    color: #6070ff;
-  }
-
-  .nav-link a:active {
-    color: #091e42;
-  }
-
-  .resume-btn {
-    padding: 3%;
-  }
-
-  .close {
-    display: none;
-  }
-
-  #contact {
-    padding: 5rem 0;
   }
 }
