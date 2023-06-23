@@ -131,11 +131,11 @@ body.menu-open {
 }
 
 .closeBtn {
-  font-size: 32px;
+  font-size: 50px;
   position: relative;
   display: flex;
+  margin-right: 20px;
   justify-content: flex-end;
-  margin-right: 30px;
   bottom: 100%;
   z-index: 999;
   top: 0;

@@ -62,8 +62,9 @@ message.addEventListener('change', (e) => {
 function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
-  menuBg.style.filter = 'blur(6px)';
-  logo[0].style.filter = 'blur(6px)';
+  menuBg.style.filter = 'blur(8px)';
+  logo[0].style.blur = 'blur(18px)';
+  openBtn.style.visibility = 'hidden';
 }
 
 openBtn.addEventListener('click', openMobileMenu);
@@ -73,6 +74,7 @@ function closeMobileMenu() {
   menuBg.style.filter = '';
   logo[0].style.filter = '';
   body.classList.remove('menu-open');
+  openBtn.style.visibility = 'visible';
 }
 
 Array.from(links).forEach((element) => {
