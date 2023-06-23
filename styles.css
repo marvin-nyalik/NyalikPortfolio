@@ -56,6 +56,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+  margin-top: -15px;
   justify-self: center;
   align-self: center;
 }
@@ -84,6 +85,7 @@ html {
   top: 0;
   bottom: 0;
   z-index: 5;
+  height: 90vh;
   right: 0;
   left: 0;
   background: rgb(117, 131, 148);
@@ -332,7 +334,7 @@ span img {
 .card .modal-footer .view-btn-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   border-top: 1px solid #ebecf0;
 }
 
@@ -402,7 +404,7 @@ span img {
 .card .modal-footer .details .view-btn-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .card .modal-footer .details .view-btn-container a {
