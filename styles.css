@@ -334,6 +334,7 @@ span img {
 .card .modal-footer .view-btn-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   margin-bottom: 0.2rem;
   border-top: 1px solid #ebecf0;
 }
@@ -403,7 +404,7 @@ span img {
 
 .card .modal-footer .details .view-btn-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 1.5rem;
 }
 
@@ -500,12 +501,6 @@ span img {
 
 [id^="mdlhead-"] {
   font-size: 20px;
-}
-
-[id^="mdlbtn"] {
-  font-size: 12px;
-  height: 5vh;
-
 }
 
 [id^="mdldesc-"] {
@@ -637,6 +632,13 @@ hr {
   margin: 0 auto;
   height: auto;
   padding: 0.8rem 0;
+}
+
+.mdbtn {
+  margin-right: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  margin-top: 0.5rem;
 }
 
 .contact h2 {
@@ -778,6 +780,28 @@ form textarea {
 
   .reorder {
     order: 1;
+  }
+
+  [id^="mdlbtn"] {
+    font-size: 12px;
+    height: 3vh;
+  }
+
+  .mdbtn {
+    height: auto;
+    width: auto;
+    padding: 0.2rem;
+    margin-top: 2rem;
+    margin-right: 0.2rem;
+    font-size: 8px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+  }
+
+  .mdbtn:hover {
+    background: #6070ff;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
   }
 
   nav {
@@ -1095,12 +1119,8 @@ form textarea {
     font-size: 13px;
   }
 
-  .card .modal-footer .details .view-btn-container .btn {
-    text-decoration: none;
-    font-size: 13px;
-    height: auto !important;
-    padding: 0 0 !important;
-    margin: 0 0 !important;
+  .card .modal-footer .details .view-btn-container a {
+    height: 4vh;
   }
 
   .card .modal-footer .details .view-btn-container a:hover {

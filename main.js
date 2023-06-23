@@ -203,8 +203,8 @@ window.onresize = checkWindowSize;
                   <li>${project.technologies[2]}</li>
                 </ul>
                 <div class="view-btn-container">
-                  <button class="btn" id="mdlbtn${index}"> <a href="${project.live_link}"> See live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
-                  <button class="btn" id="mdlbtn-${index}"> <a href="${project.source_link}">See source <i class="bx bxl-github"></i></a> </button>
+                  <button class="mdbtn" id="mdlbtn${index}"> <a href="${project.live_link}"> Live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
+                  <button class="mdbtn" id="mdlbtn-${index}"> <a href="${project.source_link}">Source <i class="bx bxl-github"></i></a> </button>
                 </div>
               </div>
             </div>
