@@ -141,7 +141,7 @@ window.onresize = checkWindowSize;
         </div>
         <div>
           <h2>${project.name}</h2>
-          <ul>
+          <ul class="card-list">
             <li class="no-bullet">ALLEAGY</li>
             <li class="project-tag">
               <span>
@@ -203,8 +203,8 @@ window.onresize = checkWindowSize;
                   <li>${project.technologies[2]}</li>
                 </ul>
                 <div class="view-btn-container">
-                  <button class="mdbtn" id="mdlbtn${index}"> <a href="${project.live_link}"> Live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
-                  <button class="mdbtn" id="mdlbtn-${index}"> <a href="${project.source_link}">Source <i class="bx bxl-github"></i></a> </button>
+                  <button class="mdbtn" type="button" id="mdlbtn${index}"> <a href="${project.live_link}"> Live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
+                  <button class="mdbtn" type="button" id="mdlbtn-${index}"> <a href="${project.source_link}">Source <i class="bx bxl-github"></i></a> </button>
                 </div>
               </div>
             </div>
