@@ -39,8 +39,8 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 90vh;
-  width: 80vw;
+  height: auto;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,17 +57,15 @@ html {
   justify-content: space-between;
   width: 90%;
   justify-self: center;
-  padding-top: 1rem;
   align-self: center;
 }
 
 .modal-head-container .modal-close {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 50px;
+  font-weight: 500;
   color: #67798e;
-  position: relative;
   cursor: pointer;
-  top: 10%;
+  top: 20%;
 }
 
 .modal-ul {
@@ -88,8 +86,7 @@ html {
   z-index: 5;
   right: 0;
   left: 0;
-  background: #c1c7d0;
-  opacity: 0.93;
+  background: #2168d2;
 }
 
 /* end modal */
@@ -373,9 +370,10 @@ span img {
 .card .modal-footer .desc {
   flex: 2;
   margin-left: 5%;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.2;
   font-weight: 400;
+  margin-bottom: 0.5rem;
   color: #344563;
 }
 
@@ -466,6 +464,7 @@ span img {
 .card .modal-ul {
   position: relative;
   top: -15px;
+  margin-bottom: 0;
 }
 
 .card .modal-ul .no-bullet {
@@ -473,6 +472,25 @@ span img {
   line-height: 16px;
   font-weight: 600;
   font-style: medium;
+}
+
+[id^="modal-cover"] {
+  height: auto;
+  width: 100%;
+}
+
+[id^="mdlhead-"] {
+  font-size: 20px;
+}
+
+[id^="mdlbtn"] {
+  font-size: 12px;
+  height: 5vh;
+
+}
+
+[id^="mdldesc-"] {
+  font-size: 12px;
 }
 
 .project-tag {
@@ -596,10 +614,10 @@ hr {
 }
 
 .card-wrapper {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   height: auto;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
 }
 
 .contact h2 {
@@ -971,7 +989,6 @@ form textarea {
     right: 0;
     left: 0;
     background: #c1c7d0;
-    opacity: 0.98;
   }
 
   .card .modal-footer {
@@ -1337,7 +1354,6 @@ form textarea {
     right: 0;
     left: 0;
     background: #c1c7d0;
-    opacity: 0.98;
   }
 
   [id^="mdl"] {

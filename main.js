@@ -164,10 +164,10 @@ window.onresize = checkWindowSize;
           </ul>
           <button class="btn" type="button">See Project</button>
         </div>
-        <div class="modal-cover" id="modal-cover">
+        <div class="modal-cover" id="modal-cover${index}">
           <div class="modal" id="modal${index}">
             <div class="modal-head-container">
-              <h2>${project.name}</h2>
+              <h2 id="mdlhead-${index}">${project.name}</h2>
               <span class="modal-close">&times;</span>
             </div>
             <ul class='modal-ul'>
@@ -191,16 +191,16 @@ window.onresize = checkWindowSize;
             </ul>
             <img src="${project.image}" alt="project1" class="modal-img" id="mdl-${index}">
             <div class="modal-footer">
-              <p class="desc">${project.description}</p>
+              <p class="desc" id="mdldesc-${index}">${project.description}</p>
               <div class="details">
-                <ul class="tech-stack">
+                <ul class="tech-stack" id="mdltecstk-${index}">
                   <li>${project.technologies[0]}</li>
                   <li>${project.technologies[1]}</li>
                   <li>${project.technologies[2]}</li>
                 </ul>
                 <div class="view-btn-container">
-                  <button class="btn"> <a href="${project.live_link}"> See live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
-                  <button class="btn"> <a href="${project.source_link}">See source <i class="bx bxl-github"></i></a> </button>
+                  <button class="btn" id="mdlbtn${index}"> <a href="${project.live_link}"> See live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
+                  <button class="btn" id="mdlbtn-${index}"> <a href="${project.source_link}">See source <i class="bx bxl-github"></i></a> </button>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ window.onresize = checkWindowSize;
       const modalCover = event.target.closest('.modal-cover');
       modalCover.style.display = 'none';
       document.body.style.overflow = 'scroll';
-      header.style.display = 'flex';
+      header.style.display = 'block';
     }
   });
 }());
