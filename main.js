@@ -65,6 +65,7 @@ function openMobileMenu() {
   menuBg.style.filter = 'blur(8px)';
   logo[0].style.blur = 'blur(18px)';
   openBtn.style.visibility = 'hidden';
+  body.style.overflow = 'hidden';
 }
 
 openBtn.addEventListener('click', openMobileMenu);
@@ -75,6 +76,7 @@ function closeMobileMenu() {
   logo[0].style.filter = '';
   body.classList.remove('menu-open');
   openBtn.style.visibility = 'visible';
+  body.style.overflow = 'scroll';
 }
 
 Array.from(links).forEach((element) => {
@@ -104,8 +106,8 @@ window.onresize = checkWindowSize;
       source_link: 'https://github.com/marvin-nyalik/Leaderboard',
     },
     {
-      name: 'Dating',
-      description: 'connecting couples across borders',
+      name: 'Virtual VC',
+      description: 'Connecting friends and networks across borders. This is only for the winners who keep their promises and virtue.',
       image: 'images/project_second.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
@@ -113,15 +115,15 @@ window.onresize = checkWindowSize;
     },
     {
       name: 'Tonic',
-      description: 'national campaign against drug abuse',
+      description: 'An enthusiastic movement of the national campaign against drug abuse to help the youth overcome the mystery of addiction.',
       image: 'images/project_third.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
       source_link: 'https://github.com/marvin-nyalik/DestryMarkers',
     },
     {
-      name: 'Walker',
-      description: 'how to keep walking when you cannot keep walking',
+      name: 'Walkers Hikers',
+      description: 'A buddy.io connection site for hikers with the love of nature. This is how to keep walking when you cannot keep walking',
       image: 'images/project_fourth.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
