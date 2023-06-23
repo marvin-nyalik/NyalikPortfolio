@@ -301,6 +301,7 @@ nav div {
   background: #fff;
   margin-bottom: 30px;
   padding: 1.2rem;
+  padding-right: 0.5rem;
 }
 
 span img {
@@ -339,7 +340,7 @@ span img {
   text-align: center;
   padding: auto;
   margin-right: auto;
-  height: 3rem;
+  height: 6vh;
   color: #396df2;
   width: 8rem;
   display: flex;
