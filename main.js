@@ -63,7 +63,7 @@ function openMobileMenu() {
   mobileMenu.style.display = 'flex';
   body.classList.add('menu-open');
   menuBg.style.filter = 'blur(8px)';
-  logo[0].style.blur = 'blur(18px)';
+  logo[0].style.visibility = 'hidden';
   openBtn.style.visibility = 'hidden';
   body.style.overflow = 'hidden';
 }
@@ -73,7 +73,7 @@ openBtn.addEventListener('click', openMobileMenu);
 function closeMobileMenu() {
   mobileMenu.style.display = 'none';
   menuBg.style.filter = '';
-  logo[0].style.filter = '';
+  logo[0].style.visibility = 'visible';
   body.classList.remove('menu-open');
   openBtn.style.visibility = 'visible';
   body.style.overflow = 'scroll';
@@ -132,9 +132,7 @@ window.onresize = checkWindowSize;
   ];
   const projectContainer = document.getElementById('works');
   projectDetails.forEach((project, index) => {
-    const articleTemplate = 
-    
-    `<div class="card-wrapper">
+    const articleTemplate = `<div class="card-wrapper">
      <article class="card">
         <div class="img-div">
         <img src="${project.image}" alt="project1" class="card-project">

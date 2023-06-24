@@ -91,11 +91,6 @@ html {
   background: rgb(117, 131, 148);
 }
 
-.card .modal h2 {
-  font-size: 20px;
-  line-height: 1.2;
-}
-
 .card .modal .modal-close {
   font-size: 22px;
   margin-top: 10px;
@@ -159,6 +154,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 7px;
 }
 
 ul li {
@@ -302,7 +298,7 @@ nav div {
   display: flex;
   width: 100%;
   flex-direction: column;
-  border: 2px solid #dfe1e6;
+  border: none;
   border-top-left-radius: 2rem;
   background: #fff;
   padding: 0.8rem;
@@ -519,7 +515,7 @@ span img {
   flex-direction: column;
   width: 95%;
   justify-content: center;
-  margin:1rem auto;
+  margin: 1rem auto;
   background-color: white;
 }
 
@@ -634,11 +630,11 @@ hr {
 }
 
 .mdbtn {
-  margin-right: 15%;
   font-size: 12px;
-  border: 1px solid lightgray;
+  border: 1px solid #ebebff;
   border-radius: 15px;
-  margin-top: 0.5rem;
+  margin: 0.7rem 0;
+  margin-right: 0.8rem;
 }
 
 .contact h2 {
@@ -648,6 +644,11 @@ hr {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
+}
+
+.card .modal h2 {
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .contact p {
@@ -660,7 +661,6 @@ hr {
   width: 75%;
   margin: 0 auto;
   padding-bottom: 1.3rem;
-  text-align: center;
 }
 
 form {
@@ -789,11 +789,9 @@ form textarea {
   }
 
   .mdbtn {
-    height: auto;
-    width: auto;
+    height: 6vh;
+    width: 5rem;
     padding: 0.2rem;
-    margin-top: 2rem;
-    margin-right: 0.2rem;
     font-size: 15px;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -904,10 +902,11 @@ form textarea {
   }
 
   #elevator-pitch {
-    font-size: 24px;
-    line-height: 2.5;
     width: 90%;
     margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
   }
 
   .headline p {
@@ -973,12 +972,6 @@ form textarea {
     margin-right: 0.3rem;
   }
 
-  #elevator-pitch {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: 20px;
-  }
-
   .card img {
     width: 100%;
     height: 90%;
@@ -998,7 +991,7 @@ form textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1006,8 +999,8 @@ form textarea {
     align-content: center;
     background: white;
     border: 1px solid lightgray;
-    border-radius: 5px;
-    padding: 1rem 0;
+    border-radius: 35px;
+    padding-top: 1rem;
   }
 
   .card .modal-head-container {
@@ -1050,7 +1043,7 @@ form textarea {
   }
 
   .card .modal-footer .desc {
-    flex: 1.5;
+    flex: 2;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
@@ -1086,6 +1079,8 @@ form textarea {
 
   .card .modal-head-container h2 {
     font-size: 28px;
+    position: relative;
+    left: -6px;
     color: #091e42;
     font-weight: 700;
     line-height: 40px;
@@ -1137,8 +1132,7 @@ form textarea {
     background: #e5e5e5;
     border-radius: 0.5rem;
     margin-right: 0.2rem;
-    font-size: 0.9rem;
-    padding: 0.4rem;
+    font-size: 12px;
     margin-bottom: 0.9rem;
   }
 
@@ -1153,13 +1147,14 @@ form textarea {
     line-height: 16px;
     position: relative;
     top: 10px;
+    margin-bottom: 1.7rem;
   }
 
-  [id^="mdl"] {
-    height: 40%;
+  /* [id^="mdl"] {
+    height: 25%;
     width: 100%;
-    object-fit: cover;
-  }
+    text-align: center;
+  } */
 
   .sep {
     height: 3vh;
