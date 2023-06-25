@@ -132,7 +132,8 @@ window.onresize = checkWindowSize;
   ];
   const projectContainer = document.getElementById('works');
   projectDetails.forEach((project, index) => {
-    const articleTemplate = `<div class="card-wrapper">
+    const articleTemplate = 
+    `<div class="card-wrapper">
      <article class="card">
         <div class="img-div">
         <img src="${project.image}" alt="project1" class="card-project">
