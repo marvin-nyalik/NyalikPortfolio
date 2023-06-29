@@ -98,20 +98,20 @@ window.onresize = checkWindowSize;
 (function createProjects() {
   const projectDetails = [
     {
+      name: 'IMovies',
+      description: 'IMovies is a Single-page Web Application built with JavaScript ES6. It uses the free TVMAZE-API to showcase information about movies and Television shows. Visit the live-link to like and comment on your favorite shows.',
+      image: 'images/IMoviesShowcase.png',
+      technologies: ['ES6', 'Webpack', 'HyperText-ML'],
+      live_link: 'https://marvin-nyalik.github.io/Movie-Capstone/dist/',
+      source_link: 'https://github.com/marvin-nyalik/Movie-Capstone',
+    },
+    {
       name: 'Leaderboard',
       description: 'This project consumes the Leaderboard API Service using JavaScript Async and Await to display scores submitted by different players',
       image: 'images/leaderboard.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      technologies: ['HyperText-ML', 'JavaScript', 'CSS'],
       live_link: 'https://marvin-nyalik.github.io/Leaderboard/dist/',
       source_link: 'https://github.com/marvin-nyalik/Leaderboard',
-    },
-    {
-      name: 'Virtual VC',
-      description: 'Connecting friends and networks across borders. This is only for the winners who keep their promises and virtue.',
-      image: 'images/project_second.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
-      source_link: 'https://github.com/marvin-nyalik/DestryMarkers',
     },
     {
       name: 'Tonic',
@@ -132,8 +132,7 @@ window.onresize = checkWindowSize;
   ];
   const projectContainer = document.getElementById('works');
   projectDetails.forEach((project, index) => {
-    const articleTemplate = 
-    `<div class="card-wrapper">
+    const articleTemplate = `<div class="card-wrapper">
      <article class="card">
         <div class="img-div">
         <img src="${project.image}" alt="project1" class="card-project">
