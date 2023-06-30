@@ -99,8 +99,10 @@ window.onresize = checkWindowSize;
   const projectDetails = [
     {
       name: 'IMovies',
-      description: 'IMovies is a Single-page Web Application built with JavaScript ES6. It uses the free TVMAZE-API to showcase information about movies and Television shows. Visit the live-link to like and comment on your favorite shows.',
+      description: 'IMovies is a Single-page Web Application built with JavaScript ES6. It uses the free TVMAZE-API to showcase information about movies and Television shows.',
       image: 'images/IMoviesShowcase.png',
+      class : 'Remote',
+      type : 'Collaborative',
       technologies: ['ES6', 'Webpack', 'HyperText-ML'],
       live_link: 'https://marvin-nyalik.github.io/Movie-Capstone/dist/',
       source_link: 'https://github.com/marvin-nyalik/Movie-Capstone',
@@ -109,6 +111,8 @@ window.onresize = checkWindowSize;
       name: 'Leaderboard',
       description: 'This project consumes the Leaderboard API Service using JavaScript Async and Await to display scores submitted by different players',
       image: 'images/leaderboard.png',
+      class: 'Personal',
+      type:'In-house',
       technologies: ['HyperText-ML', 'JavaScript', 'CSS'],
       live_link: 'https://marvin-nyalik.github.io/Leaderboard/dist/',
       source_link: 'https://github.com/marvin-nyalik/Leaderboard',
@@ -117,6 +121,8 @@ window.onresize = checkWindowSize;
       name: 'Tonic',
       description: 'An enthusiastic movement of the national campaign against drug abuse to help the youth overcome the mystery of addiction.',
       image: 'images/project_third.png',
+      class: 'Demo',
+      type:'In-house',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
       source_link: 'https://github.com/marvin-nyalik/DestryMarkers',
@@ -125,6 +131,8 @@ window.onresize = checkWindowSize;
       name: 'Walkers Hikers',
       description: 'A buddy.io connection site for hikers with the love of nature. This is how to keep walking when you cannot keep walking',
       image: 'images/project_fourth.png',
+      class: 'Demo',
+      type:'In-house',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       live_link: 'https://marvin-nyalik.github.io/DestryMarkers/',
       source_link: 'https://github.com/marvin-nyalik/DestryMarkers',
@@ -140,13 +148,13 @@ window.onresize = checkWindowSize;
         <div>
           <h2>${project.name}</h2>
           <ul class="card-list">
-            <li class="no-bullet">ALLEAGY</li>
+            <li class="no-bullet">${project.class}</li>
             <li class="project-tag">
               <span>
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                 </svg>
-                Full Stack Eng.
+                ${project.type}
               </span>
             </li>
             <li class="project-tag">
@@ -173,13 +181,13 @@ window.onresize = checkWindowSize;
               <span class="modal-close">&times;</span>
             </div>
             <ul class='modal-ul'>
-              <li class="no-bullet">ALLEAGY</li>
+              <li class="no-bullet">${project.class}</li>
               <li class="project-tag">
                 <span>
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="#C1C7D0"/>
                   </svg>
-                  Full Stack Eng.
+                  ${project.type}
                 </span>
               </li>
               <li class="project-tag">

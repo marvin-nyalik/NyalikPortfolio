@@ -1026,6 +1026,7 @@ form textarea {
     height: 55%;
     width: 85%;
     object-fit: cover;
+    object-position: left top;
     border-radius: 5px;
     margin: 5px 0;
   }
