@@ -672,6 +672,10 @@ form {
   align-items: center;
 }
 
+.links svg path {
+  fill: rgb(74, 72, 72);
+}
+
 form input {
   width: 70%;
   margin: 0.8rem 1.5rem;
