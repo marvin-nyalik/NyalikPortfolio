@@ -290,7 +290,7 @@ nav div {
 .works {
   display: grid;
   place-items: center;
-  grid-template-columns: 90%;
+  grid-template-columns: 95%;
   grid-template-rows: 4;
 }
 
@@ -599,10 +599,6 @@ span img {
   margin-left: 1rem;
 }
 
-/* .card img:hover {
-  transform: scale(0.8);
-} */
-
 hr {
   width: 90%;
   height: 0.08rem;
@@ -694,10 +690,6 @@ form input {
   display: none;
 }
 
-form input:hover {
-  transform: translateY(0.5rem);
-}
-
 .btn-container {
   width: 75%;
   display: flex;
@@ -713,6 +705,29 @@ form textarea {
   height: 5rem;
   border: 1px solid #cfd8dc;
   font-family: poppins, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid #6070ff;
+  border-radius: 15px;
+  margin-bottom: 0.9rem;
+}
+
+#container .row {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#container .row img {
+  width: 3rem;
+  height: 3rem;
+  margin: 10px;
+  padding: 0.5rem;
 }
 
 .contact-btn {
@@ -750,6 +765,14 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
+  #container {
+    width: 90%;
+    margin: 0 0;
+  }
+
+  #container .row {
+    justify-content: space-evenly;
+  }
   .menu-popup {
     display: none;
   }
@@ -958,7 +981,7 @@ form textarea {
   }
 
   .works {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -1175,6 +1198,8 @@ form textarea {
   .about {
     margin: 3.5rem auto;
     flex-direction: row;
+    height: auto;
+    padding-bottom: 3rem;
     margin-bottom: 5rem;
     border-top-right-radius: 3rem;
   }
@@ -1326,7 +1351,7 @@ form textarea {
   .resume-btn {
     position: relative;
     left: 1rem;
-    padding: 5%;
+    padding: 5px;
     font-size: 1rem;
     line-height: 1.2rem;
     margin-top: 0.3rem;
