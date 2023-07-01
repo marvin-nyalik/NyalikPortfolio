@@ -283,6 +283,10 @@ nav div {
   cursor: pointer;
 }
 
+.links svg path {
+  fill: rgb(74, 72, 72);
+}
+
 .links svg:hover path {
   fill: #7f8cff;
 }
@@ -668,10 +672,6 @@ form {
   align-items: center;
 }
 
-.links svg path {
-  fill: rgb(74, 72, 72);
-}
-
 form input {
   width: 70%;
   margin: 0.8rem 1.5rem;
@@ -773,6 +773,7 @@ form textarea {
   #container .row {
     justify-content: space-evenly;
   }
+
   .menu-popup {
     display: none;
   }
@@ -1316,6 +1317,11 @@ form textarea {
     width: 2.5rem;
     height: 2.5rem;
     margin-top: 0.4rem;
+  }
+
+  #container .row img {
+    width: 3rem;
+    height: 3rem;
   }
 
   .langs li span {
