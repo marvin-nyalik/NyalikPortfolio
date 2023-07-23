@@ -5,11 +5,17 @@
 }
 
 body {
-  background: rgb(117, 131, 148, 0.5);
+  background: #f1f4fb;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin-top: 1.2rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html {
@@ -257,6 +263,7 @@ nav div {
 #list-items {
   width: 90%;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .bio p {
@@ -678,7 +685,7 @@ form input {
   border-radius: 0.5rem;
   background-color: #fff;
   color: #172b4d;
-  height: 2rem;
+  height: 1.5rem;
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
   font-family: poppins, sans-serif;
@@ -702,7 +709,7 @@ form textarea {
   border-radius: 0.5rem;
   background-color: #fff;
   padding: 0.5rem;
-  height: 5rem;
+  height: 9rem;
   border: 1px solid #cfd8dc;
   font-family: poppins, sans-serif;
 }
@@ -717,15 +724,11 @@ form textarea {
   margin-bottom: 0.9rem;
 }
 
-#list-items {
-  margin-top: 1rem;
-}
-
 #container .row {
   display: flex;
-  margin-top: 2rem;
   width: 100%;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 #container .row img {
