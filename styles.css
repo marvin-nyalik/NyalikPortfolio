@@ -685,7 +685,7 @@ form input {
   border-radius: 0.5rem;
   background-color: #fff;
   color: #172b4d;
-  height: 1.5rem;
+  height: 2rem;
   border: 1px solid #cfd8dc;
   padding: 0.5rem;
   font-family: poppins, sans-serif;
@@ -727,8 +727,8 @@ form textarea {
 #container .row {
   display: flex;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: auto auto;
+  margin-top: 1.5rem;
 }
 
 #container .row img {
@@ -1193,12 +1193,6 @@ form textarea {
     margin-bottom: 1.7rem;
   }
 
-  /* [id^="mdl"] {
-    height: 25%;
-    width: 100%;
-    text-align: center;
-  } */
-
   .sep {
     height: 3vh;
     margin-bottom: 2rem;
@@ -1410,6 +1404,10 @@ form textarea {
     justify-content: flex-end;
     margin-top: 0.3rem;
     margin-bottom: 0.6rem;
+  }
+
+  form input {
+    height: 2vh;
   }
 
   form textarea {
