@@ -104,8 +104,8 @@ window.onresize = checkWindowSize;
       class : 'Remote',
       type : 'Collaborative',
       technologies: ['ES6', 'Webpack', 'HyperText-ML'],
-      live_link: 'https://marvin-nyalik.github.io/Movie-Capstone/dist/',
-      source_link: 'https://github.com/marvin-nyalik/Movie-Capstone',
+      live_link: 'https://marvin-nyalik.github.io/IMovies/dist/',
+      source_link: 'https://github.com/marvin-nyalik/IMovies',
     },
     {
       name: 'Leaderboard',
