@@ -106,7 +106,7 @@ window.onresize = checkWindowSize;
       technologies: ['REACT', 'Redux', 'JavaScript', 'Jest'],
       live_link: 'https://usa-companies-financial-statements.onrender.com/',
       source_link: 'https://github.com/marvin-nyalik/us-financial-statement',
-    },,
+    },
     {
       name: 'Space Travellers Hub',
       description: 'An application for a company that provides commercial and scientific space travel services. Built with React and Redux, this application allows users to book rockets and join selected space missions.',
