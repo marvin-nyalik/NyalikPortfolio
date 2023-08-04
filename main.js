@@ -98,12 +98,22 @@ window.onresize = checkWindowSize;
 (function createProjects() {
   const projectDetails = [
     {
+      name: 'The Financial Reporter',
+      description: 'The Financial Reporter gives verified annual financial statements reports from 10 distinct companies in the US stock market.',
+      image: 'images/FinancialStatements.png',
+      class: 'Personal',
+      type: 'In-house',
+      technologies: ['REACT', 'Redux', 'JavaScript', 'Jest'],
+      live_link: 'https://usa-companies-financial-statements.onrender.com/',
+      source_link: 'https://github.com/marvin-nyalik/us-financial-statement',
+    },,
+    {
       name: 'Space Travellers Hub',
       description: 'An application for a company that provides commercial and scientific space travel services. Built with React and Redux, this application allows users to book rockets and join selected space missions.',
       image: 'images/spacers.PNG',
       class: 'Remote',
       type: 'Collaborative',
-      technologies: ['REACT', 'Redux', 'Jest'],
+      technologies: ['REACT', 'Redux', 'Jest', 'API'],
       live_link: 'https://space-travellers-hub-8qpe.onrender.com/',
       source_link: 'https://github.com/marvin-nyalik/space-travelers-hub',
     },
@@ -113,7 +123,7 @@ window.onresize = checkWindowSize;
       image: 'images/IMoviesShowcase.png',
       class: 'Remote',
       type: 'Collaborative',
-      technologies: ['ES6', 'Webpack', 'HTML'],
+      technologies: ['JavaScript', 'Webpack', 'API', 'Jest'],
       live_link: 'https://marvin-nyalik.github.io/IMovies/dist/',
       source_link: 'https://github.com/marvin-nyalik/IMovies',
     },
@@ -123,7 +133,7 @@ window.onresize = checkWindowSize;
       image: 'images/leaderboard.png',
       class: 'Personal',
       type: 'In-house',
-      technologies: ['JavaScript', 'HTML5', 'CSS3'],
+      technologies: ['JavaScript', 'API', 'HTML5', 'CSS3'],
       live_link: 'https://marvin-nyalik.github.io/Leaderboard/dist/',
       source_link: 'https://github.com/marvin-nyalik/Leaderboard',
     },
@@ -156,11 +166,12 @@ window.onresize = checkWindowSize;
               </span>
             </li>
           </ul>
-          <p>${project.description}</p>
+          <p class="describe">${project.description}</p>
           <ul class="tech-stack">
             <li>${project.technologies[0]}</li>
             <li>${project.technologies[1]}</li>
             <li>${project.technologies[2]}</li>
+            <li>${project.technologies[3]}</li>
           </ul>
           <button class="btn" type="button">See Project</button>
         </div>
@@ -197,6 +208,7 @@ window.onresize = checkWindowSize;
                   <li>${project.technologies[0]}</li>
                   <li>${project.technologies[1]}</li>
                   <li>${project.technologies[2]}</li>
+                  <li>${project.technologies[3]}</li>
                 </ul>
                 <div class="view-btn-container">
                   <button class="mdbtn" type="button" id="mdlbtn${index}"> <a href="${project.live_link}"> Live <i class="bx bx-right-top-arrow-circle"></i></a></button> 
