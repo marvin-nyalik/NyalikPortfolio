@@ -98,16 +98,6 @@ window.onresize = checkWindowSize;
 (function createProjects() {
   const projectDetails = [
     {
-      name: 'The Financial Reporter',
-      description: 'The Financial Reporter gives verified annual financial statements reports from 10 distinct companies in the US stock market.',
-      image: 'images/FinancialStatements.png',
-      class: 'Personal',
-      type: 'In-house',
-      technologies: ['REACT', 'Redux', 'JavaScript', 'Jest'],
-      live_link: 'https://usa-companies-financial-statements.onrender.com/',
-      source_link: 'https://github.com/marvin-nyalik/us-financial-statement',
-    },
-    {
       name: 'Space Travellers Hub',
       description: 'An application for a company that provides commercial and scientific space travel services. Built with React and Redux, this application allows users to book rockets and join selected space missions.',
       image: 'images/spacers.PNG',
@@ -116,6 +106,16 @@ window.onresize = checkWindowSize;
       technologies: ['REACT', 'Redux', 'Jest', 'API'],
       live_link: 'https://space-travellers-hub-8qpe.onrender.com/',
       source_link: 'https://github.com/marvin-nyalik/space-travelers-hub',
+    },
+    {
+      name: 'News Pulse',
+      description: 'NewsPulse is a digital platform that provides up-to-date and relevant information on current events, developments, and stories from around the world.',
+      image: 'images/NewsPulse.png',
+      class: 'Personal',
+      type: 'In-house',
+      technologies: ['REACT', 'Redux', 'JavaScript', 'API'],
+      live_link: 'https://www.loom.com/share/dc169573423c4371b0b28db94023b9e9?sid=52383f08-35d3-4547-93b0-54ef23cbe417',
+      source_link: 'https://github.com/marvin-nyalik/NewsPulse',
     },
     {
       name: 'IMovies',
