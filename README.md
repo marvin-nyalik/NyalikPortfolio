@@ -87,7 +87,7 @@ In order to run this project you need:
 
 - GitHub: [@githubhandle](https://github.com/marvin-nyalik/)
 - Twitter: [@twitterhandle](https://twitter.com/NyalikMarvin)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marvin-otieno-05ba83263/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marvin-otieno-nyalik/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
