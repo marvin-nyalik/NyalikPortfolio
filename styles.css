@@ -1047,7 +1047,7 @@ form textarea {
     overflow-y: scroll;
     overflow-x: hidden;
     background: white;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
     border-radius: 15px;
     padding-top: 1rem;
     scrollbar-width: none;
