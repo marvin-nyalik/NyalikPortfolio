@@ -99,7 +99,7 @@ window.onresize = checkWindowSize;
   const projectDetails = [
     {
       name: 'Space Travellers Hub',
-      description: 'An application for a company that provides commercial and scientific space travel services. Built with React and Redux, this application allows users to book rockets and join selected space missions.',
+      description: 'This is an application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
       image: 'images/spacers.PNG',
       class: 'Remote',
       type: 'Collaborative',
